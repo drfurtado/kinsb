@@ -1,0 +1,29 @@
+{
+    "id": "9AF2CBDE",
+    "path": "~/Dropbox/rprojects/kinsb/index.Rmd",
+    "project_path": "index.Rmd",
+    "type": "r_markdown",
+    "hash": "2099065650",
+    "contents": "",
+    "dirty": false,
+    "created": 1608967069586.0,
+    "source_on_save": false,
+    "relative_order": 9,
+    "properties": {
+        "cursorPosition": "0,0",
+        "scrollLine": "0",
+        "Source": "Source",
+        "rmdVisualMode": "false",
+        "rmdVisualModeLocation": "2:0",
+        "rmdVisualWrapConfigured": "true",
+        "docOutlineVisible": "1"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1601532799,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1601532799,
+    "read_only": false,
+    "read_only_alternatives": []
+}

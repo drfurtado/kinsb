@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Ovande Furtado, Jr., Ph.D. | Cal State Northridge | KIN 610" />
+  <title>One-Sample t-test</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="slides_ttest1_files/reveal.js-3.3.0.1/css/reveal.css"/>
+
+
+
+<link rel="stylesheet" href="slides_ttest1_files/reveal.js-3.3.0.1/css/theme/simple.css" id="theme">
+
+
+  <!-- some tweaks to reveal css -->
+  <style type="text/css">
+    .reveal h1 { font-size: 2.0em; }
+    .reveal h2 { font-size: 1.5em;  }
+    .reveal h3 { font-size: 1.25em;	}
+    .reveal h4 { font-size: 1em;	}
+
+    .reveal .slides>section,
+    .reveal .slides>section>section {
+      padding: 0px 0px;
+    }
+
+
+
+    .reveal table {
+      border-width: 1px;
+      border-spacing: 2px;
+      border-style: dotted;
+      border-color: gray;
+      border-collapse: collapse;
+      font-size: 0.7em;
+    }
+
+    .reveal table th {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      font-weight: bold;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+    .reveal table td {
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 25px;
+      border-style: dotted;
+      border-color: gray;
+    }
+
+
+  </style>
+
+    <style type="text/css">code{white-space: pre;}</style>
+
+    <link rel="stylesheet" href="styles.css"/>
+
+<!-- Printing and PDF exports -->
+<script id="paper-css" type="application/dynamic-css">
+
+/* Default Print Stylesheet Template
+   by Rob Glazebrook of CSSnewbie.com
+   Last Updated: June 4, 2008
+
+   Feel free (nay, compelled) to edit, append, and
+   manipulate this file as you see fit. */
+
+
+@media print {
+
+	/* SECTION 1: Set default width, margin, float, and
+	   background. This prevents elements from extending
+	   beyond the edge of the printed page, and prevents
+	   unnecessary background images from printing */
+	html {
+		background: #fff;
+		width: auto;
+		height: auto;
+		overflow: visible;
+	}
+	body {
+		background: #fff;
+		font-size: 20pt;
+		width: auto;
+		height: auto;
+		border: 0;
+		margin: 0 5%;
+		padding: 0;
+		overflow: visible;
+		float: none !important;
+	}
+
+	/* SECTION 2: Remove any elements not needed in print.
+	   This would include navigation, ads, sidebars, etc. */
+	.nestedarrow,
+	.controls,
+	.fork-reveal,
+	.share-reveal,
+	.state-background,
+	.reveal .progress,
+	.reveal .backgrounds {
+		display: none !important;
+	}
+
+	/* SECTION 3: Set body font face, size, and color.
+	   Consider using a serif font for readability. */
+	body, p, td, li, div {
+		font-size: 20pt!important;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		color: #000;
+	}
+
+	/* SECTION 4: Set heading font face, sizes, and color.
+	   Differentiate your headings from your body text.
+	   Perhaps use a large sans-serif for distinction. */
+	h1,h2,h3,h4,h5,h6 {
+		color: #000!important;
+		height: auto;
+		line-height: normal;
+		font-family: Georgia, "Times New Roman", Times, serif !important;
+		text-shadow: 0 0 0 #000 !important;
+		text-align: left;
+		letter-spacing: normal;
+	}
+	/* Need to reduce the size of the fonts for printing */
+	h1 { font-size: 28pt !important;  }
+	h2 { font-size: 24pt !important; }
+	h3 { font-size: 22pt !important; }
+	h4 { font-size: 22pt !important; font-variant: small-caps; }
+	h5 { font-size: 21pt !important; }
+	h6 { font-size: 20pt !important; font-style: italic; }
+
+	/* SECTION 5: Make hyperlinks more usable.
+	   Ensure links are underlined, and consider appending
+	   the URL to the end of the link for usability. */
+	a:link,
+	a:visited {
+		color: #000 !important;
+		font-weight: bold;
+		text-decoration: underline;
+	}
+	/*
+	.reveal a:link:after,
+	.reveal a:visited:after {
+		content: " (" attr(href) ") ";
+		color: #222 !important;
+		font-size: 90%;
+	}
+	*/
+
+
+	/* SECTION 6: more reveal.js specific additions by @skypanther */
+	ul, ol, div, p {
+		visibility: visible;
+		position: static;
+		width: auto;
+		height: auto;
+		display: block;
+		overflow: visible;
+		margin: 0;
+		text-align: left !important;
+	}
+	.reveal pre,
+	.reveal table {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.reveal pre code {
+		padding: 20px;
+		border: 1px solid #ddd;
+	}
+	.reveal blockquote {
+		margin: 20px 0;
+	}
+	.reveal .slides {
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 0 !important;
+		zoom: 1 !important;
+
+		overflow: visible !important;
+		display: block !important;
+
+		text-align: left !important;
+		-webkit-perspective: none;
+		   -moz-perspective: none;
+		    -ms-perspective: none;
+		        perspective: none;
+
+		-webkit-perspective-origin: 50% 50%;
+		   -moz-perspective-origin: 50% 50%;
+		    -ms-perspective-origin: 50% 50%;
+		        perspective-origin: 50% 50%;
+	}
+	.reveal .slides section {
+		visibility: visible !important;
+		position: static !important;
+		width: auto !important;
+		height: auto !important;
+		display: block !important;
+		overflow: visible !important;
+
+		left: 0 !important;
+		top: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+		padding: 60px 20px !important;
+		z-index: auto !important;
+
+		opacity: 1 !important;
+
+		page-break-after: always !important;
+
+		-webkit-transform-style: flat !important;
+		   -moz-transform-style: flat !important;
+		    -ms-transform-style: flat !important;
+		        transform-style: flat !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+
+		-webkit-transition: none !important;
+		   -moz-transition: none !important;
+		    -ms-transition: none !important;
+		        transition: none !important;
+	}
+	.reveal .slides section.stack {
+		padding: 0 !important;
+	}
+	.reveal section:last-of-type {
+		page-break-after: avoid !important;
+	}
+	.reveal section .fragment {
+		opacity: 1 !important;
+		visibility: visible !important;
+
+		-webkit-transform: none !important;
+		   -moz-transform: none !important;
+		    -ms-transform: none !important;
+		        transform: none !important;
+	}
+	.reveal section img {
+		display: block;
+		margin: 15px 0px;
+		background: rgba(255,255,255,1);
+		border: 1px solid #666;
+		box-shadow: none;
+	}
+
+	.reveal section small {
+		font-size: 0.8em;
+	}
+
+}  
+</script>
+
+
+<script id="pdf-css" type="application/dynamic-css">
+    
+/**
+ * This stylesheet is used to print reveal.js
+ * presentations to PDF.
+ *
+ * https://github.com/hakimel/reveal.js#pdf-export
+ */
+
+* {
+	-webkit-print-color-adjust: exact;
+}
+
+body {
+	margin: 0 auto !important;
+	border: 0;
+	padding: 0;
+	float: none !important;
+	overflow: visible;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+}
+
+/* Remove any elements not needed in print. */
+.nestedarrow,
+.reveal .controls,
+.reveal .progress,
+.reveal .playback,
+.reveal.overview,
+.fork-reveal,
+.share-reveal,
+.state-background {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 0 0 0 #000 !important;
+}
+
+.reveal pre code {
+	overflow: hidden !important;
+	font-family: Courier, 'Courier New', monospace !important;
+}
+
+ul, ol, div, p {
+	visibility: visible;
+	position: static;
+	width: auto;
+	height: auto;
+	display: block;
+	overflow: visible;
+	margin: auto;
+}
+.reveal {
+	width: auto !important;
+	height: auto !important;
+	overflow: hidden !important;
+}
+.reveal .slides {
+	position: static;
+	width: 100%;
+	height: auto;
+
+	left: auto;
+	top: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	overflow: visible;
+	display: block;
+
+	-webkit-perspective: none;
+	   -moz-perspective: none;
+	    -ms-perspective: none;
+	        perspective: none;
+
+	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
+	   -moz-perspective-origin: 50% 50%;
+	    -ms-perspective-origin: 50% 50%;
+	        perspective-origin: 50% 50%;
+}
+
+.reveal .slides section {
+	page-break-after: always !important;
+
+	visibility: visible !important;
+	position: relative !important;
+	display: block !important;
+	position: relative !important;
+
+	margin: 0 !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+	min-height: 1px;
+
+	opacity: 1 !important;
+
+	-webkit-transform-style: flat !important;
+	   -moz-transform-style: flat !important;
+	    -ms-transform-style: flat !important;
+	        transform-style: flat !important;
+
+	-webkit-transform: none !important;
+	   -moz-transform: none !important;
+	    -ms-transform: none !important;
+	        transform: none !important;
+}
+
+.reveal section.stack {
+	margin: 0 !important;
+	padding: 0 !important;
+	page-break-after: avoid !important;
+	height: auto !important;
+	min-height: auto !important;
+}
+
+.reveal img {
+	box-shadow: none;
+}
+
+.reveal .roll {
+	overflow: visible;
+	line-height: 1em;
+}
+
+/* Slide backgrounds are placed inside of their slide when exporting to PDF */
+.reveal section .slide-background {
+	display: block !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/* All elements should be above the slide-background */
+.reveal section>* {
+	position: relative;
+	z-index: 1;
+}
+
+/* Display slide speaker notes when 'showNotes' is enabled */
+.reveal .speaker-notes-pdf {
+	display: block;
+	width: 100%;
+	max-height: none;
+	left: auto;
+	top: auto;
+	z-index: 100;
+}
+
+/* Display slide numbers when 'slideNumber' is enabled */
+.reveal .slide-number-pdf {
+	display: block;
+	position: absolute;
+	font-size: 14px;
+}
+
+</script>
+
+
+<script>
+var style = document.createElement( 'style' );
+style.type = 'text/css';
+var style_script_id = window.location.search.match( /print-pdf/gi ) ? 'pdf-css' : 'paper-css';
+var style_script = document.getElementById(style_script_id).text;
+style.innerHTML = style_script;
+document.getElementsByTagName('head')[0].appendChild(style);
+</script>
+
+    <script src="slides_ttest1_files/header-attrs-2.1/header-attrs.js"></script>
+    <link href="slides_ttest1_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+    <link href="slides_ttest1_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section>
+    <h1 class="title">One-Sample t-test</h1>
+    <h2 class="author">Ovande Furtado, Jr., Ph.D. | Cal State Northridge | KIN 610</h2>
+</section>
+
+<section id="parametric-vs-non-parametric" class="title-slide slide level1">
+<h1>Parametric vs Non-parametric</h1>
+<p><img src="https://www.dropbox.com/s/xy4fwffzlklyvdz/image1.png?raw=1" width="60%" style="display: block; margin: auto;" /></p>
+<p>Use the table above to decide when to use a parametric or non-parametric test.</p>
+<aside class="notes">
+Oh hey, these are some notes. They’ll be hidden in your presentation, but you can see them if you open the speaker notes window (hit »S« on your keyboard).
+</aside>
+</section>
+
+<section id="objectives" class="title-slide slide level1">
+<h1>Objectives</h1>
+<p>After studying chapters 11 &amp; 12, students should be able to:</p>
+<ul>
+<li class="fragment">understand the fundamentals of t-test</li>
+<li class="fragment">learn the steps used to calculate two types of t-tests (independent and paired-samples)</li>
+<li class="fragment">interpret SPSS output and write up the results</li>
+<li class="fragment">understand the difference between statistical significance and practical significance</li>
+</ul>
+</section>
+
+<section id="analyzing-mean-differences" class="title-slide slide level1">
+<h1>Analyzing mean differences</h1>
+<p><strong>One-Sample:</strong></p>
+<ul>
+<li>A sample mean may be used as an estimate of a population mean.</li>
+</ul>
+<ul>
+<li class="fragment">Can test the probability that the population mean lies within a certain CI using the sample mean as a predictor.</li>
+</ul>
+<p><strong>Now, we will reverse the technique above</strong></p>
+<ul>
+<li class="fragment">To determine whether a given sample is likely to have been randomly selected from a specific population.</li>
+<li class="fragment">In theory, if two samples drawn (randomly) from the sample population, their means should be the same (or similar) –&gt; Now…</li>
+</ul>
+</section>
+
+<section id="analyzing-mean-differences-1" class="title-slide slide level1">
+<h1>Analyzing mean differences</h1>
+<p>If <em>two</em> samples were drawn from the <strong>same population</strong> and their means are <strong>statistically different</strong>, then:</p>
+<ol type="1">
+<li class="fragment">One or both samples were not randomly drawn from the population</li>
+<li class="fragment">Some factor has affected one or both samples, causing them to deviate from the population from which they were originally drawn.</li>
+</ol>
+<ul>
+<li class="fragment">When we conduct a research project and have reason to believe that two groups are different &amp; we are dealing with parametric data (interval &amp; ratio), a t-test may be used to test statistical significance.</li>
+</ul>
+</section>
+
+<section id="analyzing-mean-differences-2" class="title-slide slide level1">
+<h1>Analyzing mean differences</h1>
+<ul>
+<li class="fragment">Data must be a continuous scale (ratio or interval)</li>
+<li class="fragment">Basic design
+<ul>
+<li class="fragment">Control group (e.g., gets the placebo)</li>
+<li class="fragment">Treatment/experimental group (e.g., gets the innovative intervention)</li>
+</ul></li>
+<li class="fragment">We would not expect the means to be identical, they would likely be different</li>
+<li class="fragment">t-test answers the following question:
+<ul>
+<li class="fragment">Is there a statistical difference between the control and the experimental groups? Or…</li>
+<li class="fragment">Is there a statistical difference between males and females on a given dependent variable?</li>
+</ul></li>
+</ul>
+</section>
+
+<section id="assumptions-of-t-tests" class="title-slide slide level1">
+<h1>Assumptions of <em>t</em>-tests</h1>
+<ul>
+<li class="fragment">Variables –&gt; 1 DV &amp; 1 IV (max two levels)<a href="#/fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+<li class="fragment">Sample distribution normal (check for normality before proceeding)
+<ul>
+<li class="fragment">If normal –&gt; proceed with test</li>
+<li class="fragment">If NOT normal, n = 30 or more &amp; <strong>randomly drawn from a population</strong> (<span class="math inline">\(\mu\)</span>), then proceed with test</li>
+<li class="fragment">Otherwise, choose the <strong>Mann-Whitney U-test</strong></li>
+</ul></li>
+</ul>
+</section>
+
+<section id="assumptions-of-t-test-cont." class="title-slide slide level1">
+<h1>Assumptions of <em>t</em>-test (cont.)</h1>
+<ul>
+<li class="fragment">Homogeneity of variance (shouldn’t be more than twice as large as the variance of the other)
+<ul>
+<li class="fragment">For more accuracy use the Levene’s test</li>
+</ul></li>
+<li class="fragment">Parametric data (interval or ratio scales)</li>
+</ul>
+</section>
+
+<section id="references" class="title-slide slide level1 smaller emphasized">
+<h1 class="smaller emphasized">References</h1>
+<div class="container">
+<div class="col">
+<p><img data-src="logo2.png" /></p>
+</div>
+<div class="col">
+<ol type="1">
+<li>Anon. n.d. “(4) If You Have a Negative t-Value of -1.10 and a p-Value of 0.2753 What Does This Mean? - Quora.” Retrieved November 8, 2016a (<a href="https://www.quora.com/If-you-have-a-negative-t-value-of-1-10-and-a-p-value-of-0-2753-what-does-this-mean" class="uri">https://www.quora.com/If-you-have-a-negative-t-value-of-1-10-and-a-p-value-of-0-2753-what-does-this-mean</a>).</li>
+<li>Anon. n.d. “Student’s t-Test in R and by Hand: How to Compare Two Groups under Different Scenarios.” Stats and R. Retrieved March 20, 2020b (<a href="https://www.statsandr.com/blog/student-s-t-test-in-r-and-by-hand-how-to-compare-two-groups-under-different-scenarios/" class="uri">https://www.statsandr.com/blog/student-s-t-test-in-r-and-by-hand-how-to-compare-two-groups-under-different-scenarios/</a>).</li>
+<li>Anon. n.d. Two-Sample t Test in R (Independent Groups) with Example | R Tutorial 4.2 | MarinStatsLectures.</li>
+</ol>
+</div>
+</div>
+</section>
+
+<section id="two-colums" class="title-slide slide level1">
+<h1>two colums</h1>
+<div class="container">
+<div class="col">
+<p>Column 1 Content</p>
+</div>
+<div class="col">
+<p>Column 2 Content</p>
+</div>
+</div>
+</section>
+
+<section class="footnotes" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>male/female; pre/post-test; etc.<a href="#/fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+    </div>
+  </div>
+
+  <script src="slides_ttest1_files/reveal.js-3.3.0.1/lib/js/head.min.js"></script>
+  <script src="slides_ttest1_files/reveal.js-3.3.0.1/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Display the page number of the current slide
+        slideNumber: true,
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: false,
+        // Opens links in an iframe preview overlay
+        previewLinks: true,
+        // Transition style
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+
+
+        chalkboard: {
+        },
+
+        keyboard: {
+          67: function() { RevealChalkboard.toggleNotesCanvas() },    // toggle notes canvas when 'c' is pressed
+          66: function() { RevealChalkboard.toggleChalkboard() }, // toggle chalkboard when 'b' is pressed
+          46: function() { RevealChalkboard.clear() },    // clear chalkboard when 'DEL' is pressed
+           8: function() { RevealChalkboard.reset() },    // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+          68: function() { RevealChalkboard.download() }, // downlad recorded chalkboard drawing when 'd' is pressed
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'slides_ttest1_files/reveal.js-3.3.0.1/plugin/notes/notes.js', async: true },
+          { src: 'slides_ttest1_files/reveal.js-3.3.0.1/plugin/search/search.js', async: true },
+          { src: 'slides_ttest1_files/reveal.js-3.3.0.1/plugin/chalkboard/chalkboard.js', async: true },
+        ]
+      });
+    </script>
+  <!-- dynamically load mathjax for compatibility with self-contained -->
+  <script>
+    (function () {
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+      document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+  </script>
+
+<script>
+  (function() {
+    if (window.jQuery) {
+      Reveal.addEventListener( 'slidechanged', function(event) {  
+        window.jQuery(event.previousSlide).trigger('hidden');
+        window.jQuery(event.currentSlide).trigger('shown');
+      });
+    }
+  })();
+</script>
+
+
+  </body>
+</html>

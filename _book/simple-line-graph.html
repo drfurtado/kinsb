@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 5 Simple line graph | Kinesiology Statistics book - A Guide to Data Analysis &amp; Interpretation</title>
+  <meta name="description" content="Chapter 5 Simple line graph | Kinesiology Statistics book - A Guide to Data Analysis &amp; Interpretation" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 5 Simple line graph | Kinesiology Statistics book - A Guide to Data Analysis &amp; Interpretation" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="images/book-cover.png" />
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 5 Simple line graph | Kinesiology Statistics book - A Guide to Data Analysis &amp; Interpretation" />
+  
+  
+  <meta name="twitter:image" content="images/book-cover.png" />
+
+<meta name="author" content="Ovande Furtado, Jr., Ph.D." />
+
+
+<meta name="date" content="2020-03-24" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="hypothesis-testing.html"/>
+<link rel="next" href="power-effectsize.html"/>
+<script src="libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">KIN Stats Book | Dr. Furtado</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="statistical-software.html"><a href="statistical-software.html"><i class="fa fa-check"></i><b>1</b> Statistical Software</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="statistical-software.html"><a href="statistical-software.html#package-download-instalation"><i class="fa fa-check"></i><b>1.1</b> Package Download &amp; Instalation</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="statistical-software.html"><a href="statistical-software.html#r-and-rstudio"><i class="fa fa-check"></i><b>1.1.1</b> <em>R</em> and RStudio</a></li>
+<li class="chapter" data-level="1.1.2" data-path="statistical-software.html"><a href="statistical-software.html#spss"><i class="fa fa-check"></i><b>1.1.2</b> SPSS</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="statistical-software.html"><a href="statistical-software.html#datasets"><i class="fa fa-check"></i><b>1.2</b> Datasets</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="fundamentals.html"><a href="fundamentals.html"><i class="fa fa-check"></i><b>2</b> Fundamental Concepts</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="fundamentals.html"><a href="fundamentals.html#measurement"><i class="fa fa-check"></i><b>2.1</b> Measurement</a></li>
+<li class="chapter" data-level="2.2" data-path="fundamentals.html"><a href="fundamentals.html#variables"><i class="fa fa-check"></i><b>2.2</b> Variables</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="fundamentals.html"><a href="fundamentals.html#types-of-variables"><i class="fa fa-check"></i><b>2.2.1</b> Types of variables</a></li>
+<li class="chapter" data-level="2.2.2" data-path="fundamentals.html"><a href="fundamentals.html#classification-of-data"><i class="fa fa-check"></i><b>2.2.2</b> Classification of data</a></li>
+<li class="chapter" data-level="2.2.3" data-path="fundamentals.html"><a href="fundamentals.html#choosing-the-correct-test"><i class="fa fa-check"></i><b>2.2.3</b> Choosing the correct test</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="fundamentals.html"><a href="fundamentals.html#symbols"><i class="fa fa-check"></i><b>2.3</b> Symbols</a></li>
+<li class="chapter" data-level="2.4" data-path="fundamentals.html"><a href="fundamentals.html#equations"><i class="fa fa-check"></i><b>2.4</b> Equations</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="descriptives.html"><a href="descriptives.html"><i class="fa fa-check"></i><b>3</b> Descriptive Statistics</a></li>
+<li class="chapter" data-level="4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html"><i class="fa fa-check"></i><b>4</b> Hypothesis Testing</a>
+<ul>
+<li class="chapter" data-level="" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#what-you-will-learn"><i class="fa fa-check"></i>What you will learn</a>
+<ul>
+<li class="chapter" data-level="" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#what-is-a-hypothesis"><i class="fa fa-check"></i>What is a hypothesis?</a></li>
+</ul></li>
+<li class="chapter" data-level="4.1" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#samples-and-populations"><i class="fa fa-check"></i><b>4.1</b> Samples and Populations</a></li>
+<li class="chapter" data-level="4.2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#the-null-hypothesis"><i class="fa fa-check"></i><b>4.2</b> The Null Hypothesis</a></li>
+<li class="chapter" data-level="4.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#the-research-hypothesis"><i class="fa fa-check"></i><b>4.3</b> The Research Hypothesis</a></li>
+<li class="chapter" data-level="4.4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#chapter-summary"><i class="fa fa-check"></i><b>4.4</b> Chapter Summary</a></li>
+<li class="chapter" data-level="4.5" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#practice-exercises"><i class="fa fa-check"></i><b>4.5</b> Practice Exercises</a></li>
+</ul></li>
+<li class="part"><span><b>I Graphing Data</b></span></li>
+<li class="chapter" data-level="5" data-path="simple-line-graph.html"><a href="simple-line-graph.html"><i class="fa fa-check"></i><b>5</b> Simple line graph</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="simple-line-graph.html"><a href="simple-line-graph.html#what-you-will-learn-1"><i class="fa fa-check"></i><b>5.1</b> What you will learn</a></li>
+<li class="chapter" data-level="5.2" data-path="simple-line-graph.html"><a href="simple-line-graph.html#requirements"><i class="fa fa-check"></i><b>5.2</b> Requirements</a></li>
+<li class="chapter" data-level="5.3" data-path="simple-line-graph.html"><a href="simple-line-graph.html#introduction"><i class="fa fa-check"></i><b>5.3</b> Introduction</a></li>
+<li class="chapter" data-level="5.4" data-path="simple-line-graph.html"><a href="simple-line-graph.html#simple-line-graph-1"><i class="fa fa-check"></i><b>5.4</b> Simple line graph</a></li>
+<li class="chapter" data-level="5.5" data-path="simple-line-graph.html"><a href="simple-line-graph.html#multiple-lines-graph"><i class="fa fa-check"></i><b>5.5</b> Multiple lines graph</a></li>
+<li class="chapter" data-level="5.6" data-path="simple-line-graph.html"><a href="simple-line-graph.html#multiple-lines-graph-with-legends"><i class="fa fa-check"></i><b>5.6</b> Multiple lines graph (with legends)</a></li>
+<li class="chapter" data-level="5.7" data-path="simple-line-graph.html"><a href="simple-line-graph.html#spss-1"><i class="fa fa-check"></i><b>5.7</b> SPSS</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="power-effectsize.html"><a href="power-effectsize.html"><i class="fa fa-check"></i><b>6</b> Power &amp; Effect Size</a>
+<ul>
+<li class="chapter" data-level="" data-path="power-effectsize.html"><a href="power-effectsize.html#what-you-will-learn-2"><i class="fa fa-check"></i>What you will learn</a></li>
+<li class="chapter" data-level="6.1" data-path="power-effectsize.html"><a href="power-effectsize.html#what-is-power"><i class="fa fa-check"></i><b>6.1</b> What is power?</a></li>
+<li class="chapter" data-level="6.2" data-path="power-effectsize.html"><a href="power-effectsize.html#what-is-effect-size"><i class="fa fa-check"></i><b>6.2</b> What is effect size</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="power-effectsize.html"><a href="power-effectsize.html#calculators"><i class="fa fa-check"></i><b>6.2.1</b> Calculators</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Kinesiology Statistics book - A Guide to Data Analysis &amp; Interpretation</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="simple-line-graph" class="section level1" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Simple line graph</h1>
+<div id="what-you-will-learn-1" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> What you will learn</h2>
+<ul>
+<li>Topic 1</li>
+<li>Topic 2</li>
+</ul>
+</div>
+<div id="requirements" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Requirements</h2>
+<ul>
+<li>Install <em>R</em> and RStudio^{Alternatively, you can use RStudio Cloud}</li>
+</ul>
+<p>To follow along, open RStudio, then create a new <em>R</em> script<a href="#fn13" class="footnote-ref" id="fnref13"><sup>13</sup></a>. Then, copy and paste each chunk of code into the newly created script.</p>
+<p>Finally, run <em>separately</em> each step (chunk of code) to create a simple line graph. We will start with Step 1, then run Step 2 to create the graph shown in Figure <a href="simple-line-graph.html#fig:simple-line-1">5.1</a>. Notice that this graph does not have the lines (or titles), yet.</p>
+</div>
+<div id="introduction" class="section level2" number="5.3">
+<h2><span class="header-section-number">5.3</span> Introduction</h2>
+<p><em>R</em> and RStudio are two great tools for creating graphs. Although I think SPSS scores high on the graph creation category, it falls short in many aspects. Arguably, its main shortcoming has to do the lack of flexibility. This is not the case with <em>R</em> and RStudio.</p>
+<p>Below, I will show how to create beautiful graphs with <em>R</em> and RStudio.</p>
+<p>I will get started with line graphs.</p>
+</div>
+<div id="simple-line-graph-1" class="section level2" number="5.4">
+<h2><span class="header-section-number">5.4</span> Simple line graph</h2>
+<p>To follow along, open RStudio, then create a new <em>R</em> script<a href="#fn14" class="footnote-ref" id="fnref14"><sup>14</sup></a>. Then, copy and paste each chunk of code into the newly created script.</p>
+<p>Finally, run <em>separately</em> each step (chunk of code) to create a simple line graph. We will start with Step 1, then run Step 2 to create the graph shown in Figure <a href="simple-line-graph.html#fig:simple-line-1">5.1</a>. Notice that this graph does not have the lines (or titles), yet.</p>
+<p><strong>Step 1</strong></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="simple-line-graph.html#cb3-1"></a><span class="co"># Step 1: Create two variables (x, y) and assign numbers to each</span></span>
+<span id="cb3-2"><a href="simple-line-graph.html#cb3-2"></a>x &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">5</span>)</span>
+<span id="cb3-3"><a href="simple-line-graph.html#cb3-3"></a>y &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">12</span>,<span class="dv">18</span>,<span class="dv">22</span>,<span class="dv">20</span>,<span class="dv">28</span>)</span></code></pre></div>
+<p><strong>Step 2</strong></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="simple-line-graph.html#cb4-1"></a><span class="co"># Step 2: Create a simple plot</span></span>
+<span id="cb4-2"><a href="simple-line-graph.html#cb4-2"></a><span class="kw">plot</span>(x, y)</span></code></pre></div>
+<div class="figure"><span id="fig:simple-line-1"></span>
+<img src="kinsb_files/figure-html/simple-line-1-1.png" alt="Simple graph line without title nor lines" width="672" />
+<p class="caption">
+Figure 5.1: Simple graph line without title nor lines
+</p>
+</div>
+<p><strong>Step 3</strong></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="simple-line-graph.html#cb5-1"></a><span class="co"># Step 3: Let&#39;s add labels for x and y and a title for the plot</span></span>
+<span id="cb5-2"><a href="simple-line-graph.html#cb5-2"></a><span class="kw">plot</span>(x, y, <span class="dt">xlab =</span> <span class="st">&quot;x var title&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;y var title&quot;</span>, <span class="dt">main =</span> <span class="st">&quot;Title&quot;</span>)</span></code></pre></div>
+<div class="figure"><span id="fig:simple-line-2"></span>
+<img src="kinsb_files/figure-html/simple-line-2-1.png" alt="Simple graph with titles but no lines" width="672" />
+<p class="caption">
+Figure 5.2: Simple graph with titles but no lines
+</p>
+</div>
+<p><strong>Step 4</strong></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="simple-line-graph.html#cb6-1"></a><span class="co"># Step 4: Let&#39;s draw a line</span></span>
+<span id="cb6-2"><a href="simple-line-graph.html#cb6-2"></a><span class="kw">plot</span>(x, y, <span class="dt">xlab =</span> <span class="st">&quot;x var title&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;y var title&quot;</span>, <span class="dt">main =</span> <span class="st">&quot;Title&quot;</span>, </span>
+<span id="cb6-3"><a href="simple-line-graph.html#cb6-3"></a>     <span class="dt">type =</span> <span class="st">&quot;o&quot;</span>)</span></code></pre></div>
+<div class="figure"><span id="fig:simple-line-3"></span>
+<img src="kinsb_files/figure-html/simple-line-3-1.png" alt="Simple graph line with titles and lines" width="672" />
+<p class="caption">
+Figure 5.3: Simple graph line with titles and lines
+</p>
+</div>
+<p><strong>Step 5</strong></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="simple-line-graph.html#cb7-1"></a><span class="co"># Step 5: Let&#39;s change the density and color of the line and dots</span></span>
+<span id="cb7-2"><a href="simple-line-graph.html#cb7-2"></a><span class="kw">plot</span>(x, y, <span class="dt">xlab =</span> <span class="st">&quot;x var title&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;y var title&quot;</span>, <span class="dt">main =</span> <span class="st">&quot;Title&quot;</span>, </span>
+<span id="cb7-3"><a href="simple-line-graph.html#cb7-3"></a>     <span class="dt">type =</span> <span class="st">&quot;o&quot;</span>, <span class="dt">pch =</span> <span class="dv">20</span>, <span class="dt">lwd =</span> <span class="dv">2</span>, <span class="dt">col =</span> <span class="st">&quot;blue&quot;</span>)</span></code></pre></div>
+<div class="figure"><span id="fig:simple-line-4"></span>
+<img src="kinsb_files/figure-html/simple-line-4-1.png" alt="Simple graph line with titles, different line density, and color" width="672" />
+<p class="caption">
+Figure 5.4: Simple graph line with titles, different line density, and color
+</p>
+</div>
+</div>
+<div id="multiple-lines-graph" class="section level2" number="5.5">
+<h2><span class="header-section-number">5.5</span> Multiple lines graph</h2>
+<p>{{% alert note %}}
+The R script below was adapted from: <a href="http://bit.ly/34fDitr" class="uri">http://bit.ly/34fDitr</a></p>
+<p>To accomplish this task, you will need to use three other functions in R: points() and lines()
+{{% /alert %}}</p>
+<p><strong>What you need to know</strong></p>
+<p>Three groups were tested 5 times (once every week for a period of 5 weeks) on BMI (body mass index). For a period of five weeks, two groups engaged in a physical fitness program whereas G1 did not exercise at all. Using this information, plot BMI changes over time for the three groups.</p>
+<pre><code>Group 1 (G1) = No exercise (control group)
+Group 2 (G2) = Traditional fitness program
+Group 3 (G3) = New fitness program</code></pre>
+<p><strong>Step 1</strong></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="simple-line-graph.html#cb9-1"></a><span class="co"># define 3 data sets</span></span>
+<span id="cb9-2"><a href="simple-line-graph.html#cb9-2"></a>time &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>) <span class="co"># or simply c(1:5)</span></span>
+<span id="cb9-3"><a href="simple-line-graph.html#cb9-3"></a>y1 &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">24</span>,<span class="dv">24</span>,<span class="dv">26</span>,<span class="dv">23</span>,<span class="dv">25</span>)      <span class="co"># Group 1</span></span>
+<span id="cb9-4"><a href="simple-line-graph.html#cb9-4"></a>y2 &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">28</span>, <span class="dv">25</span>, <span class="dv">26</span>, <span class="dv">25</span>, <span class="dv">24</span>)  <span class="co"># Group 2</span></span>
+<span id="cb9-5"><a href="simple-line-graph.html#cb9-5"></a>y3 &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">30</span>,<span class="dv">30</span>, <span class="dv">28</span>, <span class="dv">26</span>, <span class="dv">25</span>)   <span class="co"># Group 3</span></span></code></pre></div>
+<p><strong>Step 2</strong></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="simple-line-graph.html#cb10-1"></a><span class="co"># plot the first curve by calling plot() function</span></span>
+<span id="cb10-2"><a href="simple-line-graph.html#cb10-2"></a><span class="co"># First curve is plotted</span></span>
+<span id="cb10-3"><a href="simple-line-graph.html#cb10-3"></a><span class="kw">plot</span>(time, y1, <span class="dt">type=</span><span class="st">&quot;o&quot;</span>, <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>, <span class="dt">pch=</span><span class="st">&quot;o&quot;</span>, <span class="dt">lty=</span><span class="dv">1</span>, <span class="dt">ylim=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">50</span>))</span></code></pre></div>
+<div class="figure"><span id="fig:multi-line-1"></span>
+<img src="kinsb_files/figure-html/multi-line-1-1.png" alt="Multi line graph - first line" width="672" />
+<p class="caption">
+Figure 5.5: Multi line graph - first line
+</p>
+</div>
+<p><strong>Step 3</strong></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="simple-line-graph.html#cb11-1"></a><span class="co"># Add second curve to the same plot by calling points() and lines()</span></span>
+<span id="cb11-2"><a href="simple-line-graph.html#cb11-2"></a><span class="co"># Use symbol &#39;*&#39; for points.</span></span>
+<span id="cb11-3"><a href="simple-line-graph.html#cb11-3"></a><span class="kw">plot</span>(time, y1, <span class="dt">type=</span><span class="st">&quot;o&quot;</span>, <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>, <span class="dt">pch=</span><span class="st">&quot;o&quot;</span>, <span class="dt">lty=</span><span class="dv">1</span>, <span class="dt">ylim=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">50</span>))</span>
+<span id="cb11-4"><a href="simple-line-graph.html#cb11-4"></a><span class="kw">points</span>(time, y2, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">pch=</span><span class="st">&#39;*&#39;</span>)</span>
+<span id="cb11-5"><a href="simple-line-graph.html#cb11-5"></a><span class="kw">lines</span>(time, y2, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">lty=</span><span class="dv">2</span>)</span></code></pre></div>
+<div class="figure"><span id="fig:multi-line-2"></span>
+<img src="kinsb_files/figure-html/multi-line-2-1.png" alt="Multi line graph - second line added" width="672" />
+<p class="caption">
+Figure 5.6: Multi line graph - second line added
+</p>
+</div>
+<p><strong>Step 4 </strong></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="simple-line-graph.html#cb12-1"></a><span class="co"># Add Third curve to the same plot by calling points() and lines()</span></span>
+<span id="cb12-2"><a href="simple-line-graph.html#cb12-2"></a><span class="co"># Use symbol &#39;+&#39; for points.</span></span>
+<span id="cb12-3"><a href="simple-line-graph.html#cb12-3"></a><span class="kw">plot</span>(time, y1, <span class="dt">type=</span><span class="st">&quot;o&quot;</span>, <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>, <span class="dt">pch=</span><span class="st">&quot;o&quot;</span>, <span class="dt">lty=</span><span class="dv">1</span>, <span class="dt">ylim=</span><span class="kw">c</span>(<span class="dv">0</span>,<span class="dv">50</span>))</span>
+<span id="cb12-4"><a href="simple-line-graph.html#cb12-4"></a><span class="kw">points</span>(time, y2, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">pch=</span><span class="st">&#39;*&#39;</span>)</span>
+<span id="cb12-5"><a href="simple-line-graph.html#cb12-5"></a><span class="kw">lines</span>(time, y2, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">lty=</span><span class="dv">2</span>)</span>
+<span id="cb12-6"><a href="simple-line-graph.html#cb12-6"></a><span class="kw">points</span>(time, y3, <span class="dt">col=</span><span class="st">&quot;dark red&quot;</span>,<span class="dt">pch=</span><span class="st">&quot;+&quot;</span>)</span>
+<span id="cb12-7"><a href="simple-line-graph.html#cb12-7"></a><span class="kw">lines</span>(time, y3, <span class="dt">col=</span><span class="st">&quot;dark red&quot;</span>, <span class="dt">lty=</span><span class="dv">3</span>)</span></code></pre></div>
+<div class="figure"><span id="fig:multi-line-3"></span>
+<img src="kinsb_files/figure-html/multi-line-3-1.png" alt="Multi line graph - third line added" width="672" />
+<p class="caption">
+Figure 5.7: Multi line graph - third line added
+</p>
+</div>
+<p>{{% alert note %}}
+After running the script above, you will notice an empty space on the top-half of the plot. So, change the following: (1) Change the <code>ylim</code> argument to <code>20, 35</code>. This will improve the look of the plot. (2) In addition, add <code>labels</code> to <code>y</code> and <code>x</code> and a <code>main title</code> to the plot. Refer to Figure <a href="simple-line-graph.html#fig:simple-line-2">5.2</a> for more details.
+{{% /alert %}}</p>
+<p><strong>Step 5</strong></p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="simple-line-graph.html#cb13-1"></a><span class="co"># Add Third curve to the same plot by calling points() and lines()</span></span>
+<span id="cb13-2"><a href="simple-line-graph.html#cb13-2"></a><span class="co"># Use symbol &#39;+&#39; for points.</span></span>
+<span id="cb13-3"><a href="simple-line-graph.html#cb13-3"></a><span class="kw">plot</span>(time, y1, <span class="dt">xlab =</span> <span class="st">&quot;x var title&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;y var title&quot;</span>, <span class="dt">main =</span> <span class="st">&quot;Title&quot;</span>, <span class="dt">type=</span><span class="st">&quot;o&quot;</span>, <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>, <span class="dt">pch=</span><span class="st">&quot;o&quot;</span>, <span class="dt">lty=</span><span class="dv">1</span>, <span class="dt">ylim=</span><span class="kw">c</span>(<span class="dv">20</span>,<span class="dv">35</span>))</span>
+<span id="cb13-4"><a href="simple-line-graph.html#cb13-4"></a><span class="kw">points</span>(time, y2, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">pch=</span><span class="st">&#39;*&#39;</span>)</span>
+<span id="cb13-5"><a href="simple-line-graph.html#cb13-5"></a><span class="kw">lines</span>(time, y2, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">lty=</span><span class="dv">2</span>)</span>
+<span id="cb13-6"><a href="simple-line-graph.html#cb13-6"></a><span class="kw">points</span>(time, y3, <span class="dt">col=</span><span class="st">&quot;dark red&quot;</span>,<span class="dt">pch=</span><span class="st">&quot;+&quot;</span>)</span>
+<span id="cb13-7"><a href="simple-line-graph.html#cb13-7"></a><span class="kw">lines</span>(time, y3, <span class="dt">col=</span><span class="st">&quot;dark red&quot;</span>, <span class="dt">lty=</span><span class="dv">3</span>)</span></code></pre></div>
+<div class="figure"><span id="fig:multi-line-4"></span>
+<img src="kinsb_files/figure-html/multi-line-4-1.png" alt="Multi line graph - remove space and add label" width="672" />
+<p class="caption">
+Figure 5.8: Multi line graph - remove space and add label
+</p>
+</div>
+</div>
+<div id="multiple-lines-graph-with-legends" class="section level2" number="5.6">
+<h2><span class="header-section-number">5.6</span> Multiple lines graph (with legends)</h2>
+<p>Below is the R script to create a plot with multiple lines and a legend. To do this, create a new script, then paste the script below into RStudio and run the script the same way it was done previously.</p>
+<p><strong>Step 1</strong></p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="simple-line-graph.html#cb14-1"></a><span class="co"># define 3 data sets</span></span>
+<span id="cb14-2"><a href="simple-line-graph.html#cb14-2"></a>xtime &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>) <span class="co"># or simply c(1:5)</span></span>
+<span id="cb14-3"><a href="simple-line-graph.html#cb14-3"></a>y1 &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">24</span>,<span class="dv">24</span>,<span class="dv">26</span>,<span class="dv">23</span>,<span class="dv">25</span>)     <span class="co"># Group 1</span></span>
+<span id="cb14-4"><a href="simple-line-graph.html#cb14-4"></a>y2 &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">28</span>,<span class="dv">25</span>,<span class="dv">26</span>,<span class="dv">25</span>,<span class="dv">24</span>)     <span class="co"># Group 2</span></span>
+<span id="cb14-5"><a href="simple-line-graph.html#cb14-5"></a>y3 &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">30</span>,<span class="dv">30</span>,<span class="dv">28</span>,<span class="dv">26</span>,<span class="dv">25</span>)     <span class="co"># Group 3</span></span></code></pre></div>
+<p><strong>Step 2</strong></p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="simple-line-graph.html#cb15-1"></a><span class="co"># plot the first curve by calling plot() function</span></span>
+<span id="cb15-2"><a href="simple-line-graph.html#cb15-2"></a><span class="co"># First curve is plotted</span></span>
+<span id="cb15-3"><a href="simple-line-graph.html#cb15-3"></a><span class="kw">plot</span>(xtime, y1, <span class="dt">type=</span><span class="st">&quot;o&quot;</span>, <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>, <span class="dt">pch=</span><span class="st">&quot;o&quot;</span>, <span class="dt">lty=</span><span class="dv">1</span>, <span class="dt">ylim=</span><span class="kw">c</span>(<span class="dv">20</span>,<span class="dv">40</span>), <span class="dt">ylab=</span><span class="st">&quot;y&quot;</span> )</span></code></pre></div>
+<p><img src="kinsb_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><strong>Step 3</strong></p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="simple-line-graph.html#cb16-1"></a><span class="co"># Add second curve to the same plot by calling points() and lines()</span></span>
+<span id="cb16-2"><a href="simple-line-graph.html#cb16-2"></a><span class="co"># Use symbol &#39;*&#39; for points.</span></span>
+<span id="cb16-3"><a href="simple-line-graph.html#cb16-3"></a><span class="kw">plot</span>(xtime, y1, <span class="dt">type=</span><span class="st">&quot;o&quot;</span>, <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>, <span class="dt">pch=</span><span class="st">&quot;o&quot;</span>, <span class="dt">lty=</span><span class="dv">1</span>, <span class="dt">ylim=</span><span class="kw">c</span>(<span class="dv">20</span>,<span class="dv">40</span>), <span class="dt">ylab=</span><span class="st">&quot;y&quot;</span> )</span>
+<span id="cb16-4"><a href="simple-line-graph.html#cb16-4"></a><span class="kw">points</span>(xtime, y2, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">pch=</span><span class="st">&quot;*&quot;</span>)</span>
+<span id="cb16-5"><a href="simple-line-graph.html#cb16-5"></a><span class="kw">lines</span>(xtime, y2, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">lty=</span><span class="dv">2</span>)</span></code></pre></div>
+<p><img src="kinsb_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><strong>Step 4</strong></p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="simple-line-graph.html#cb17-1"></a><span class="co"># Add Third curve to the same plot by calling points() and lines()</span></span>
+<span id="cb17-2"><a href="simple-line-graph.html#cb17-2"></a><span class="co"># Use the symbol &#39;+&#39; for points.</span></span>
+<span id="cb17-3"><a href="simple-line-graph.html#cb17-3"></a><span class="kw">plot</span>(xtime, y1, <span class="dt">type=</span><span class="st">&quot;o&quot;</span>, <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>, <span class="dt">pch=</span><span class="st">&quot;o&quot;</span>, <span class="dt">lty=</span><span class="dv">1</span>, <span class="dt">ylim=</span><span class="kw">c</span>(<span class="dv">20</span>,<span class="dv">40</span>), <span class="dt">ylab=</span><span class="st">&quot;y&quot;</span> )</span>
+<span id="cb17-4"><a href="simple-line-graph.html#cb17-4"></a><span class="kw">points</span>(xtime, y2, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">pch=</span><span class="st">&quot;*&quot;</span>)</span>
+<span id="cb17-5"><a href="simple-line-graph.html#cb17-5"></a><span class="kw">lines</span>(xtime, y2, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">lty=</span><span class="dv">2</span>)</span>
+<span id="cb17-6"><a href="simple-line-graph.html#cb17-6"></a><span class="kw">points</span>(xtime, y3, <span class="dt">col=</span><span class="st">&quot;dark red&quot;</span>,<span class="dt">pch=</span><span class="st">&quot;+&quot;</span>)</span>
+<span id="cb17-7"><a href="simple-line-graph.html#cb17-7"></a><span class="kw">lines</span>(xtime, y3, <span class="dt">col=</span><span class="st">&quot;dark red&quot;</span>, <span class="dt">lty=</span><span class="dv">3</span>)</span></code></pre></div>
+<p><img src="kinsb_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><strong>Step 5</strong></p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="simple-line-graph.html#cb18-1"></a><span class="co"># Adding a legend inside the box at the location (1,37) in graph coordinates.</span></span>
+<span id="cb18-2"><a href="simple-line-graph.html#cb18-2"></a><span class="co"># Note that the order of plots are maintained in the vectors of attributes.</span></span>
+<span id="cb18-3"><a href="simple-line-graph.html#cb18-3"></a><span class="kw">plot</span>(xtime, y1, <span class="dt">type=</span><span class="st">&quot;o&quot;</span>, <span class="dt">col=</span><span class="st">&quot;blue&quot;</span>, <span class="dt">pch=</span><span class="st">&quot;o&quot;</span>, <span class="dt">lty=</span><span class="dv">1</span>, <span class="dt">ylim=</span><span class="kw">c</span>(<span class="dv">20</span>,<span class="dv">40</span>), <span class="dt">ylab=</span><span class="st">&quot;y&quot;</span> )</span>
+<span id="cb18-4"><a href="simple-line-graph.html#cb18-4"></a><span class="kw">points</span>(xtime, y2, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>, <span class="dt">pch=</span><span class="st">&quot;*&quot;</span>)</span>
+<span id="cb18-5"><a href="simple-line-graph.html#cb18-5"></a><span class="kw">lines</span>(xtime, y2, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>,<span class="dt">lty=</span><span class="dv">2</span>)</span>
+<span id="cb18-6"><a href="simple-line-graph.html#cb18-6"></a><span class="kw">points</span>(xtime, y3, <span class="dt">col=</span><span class="st">&quot;dark red&quot;</span>,<span class="dt">pch=</span><span class="st">&quot;+&quot;</span>)</span>
+<span id="cb18-7"><a href="simple-line-graph.html#cb18-7"></a><span class="kw">lines</span>(xtime, y3, <span class="dt">col=</span><span class="st">&quot;dark red&quot;</span>, <span class="dt">lty=</span><span class="dv">3</span>)</span>
+<span id="cb18-8"><a href="simple-line-graph.html#cb18-8"></a><span class="kw">legend</span>(<span class="dv">1</span>,<span class="dv">37</span>,<span class="dt">legend=</span><span class="kw">c</span>(<span class="st">&quot;y1&quot;</span>,<span class="st">&quot;y2&quot;</span>,<span class="st">&quot;y3&quot;</span>), <span class="dt">col=</span><span class="kw">c</span>(<span class="st">&quot;blue&quot;</span>,<span class="st">&quot;red&quot;</span>,<span class="st">&quot;black&quot;</span>),</span>
+<span id="cb18-9"><a href="simple-line-graph.html#cb18-9"></a>       <span class="dt">pch=</span><span class="kw">c</span>(<span class="st">&quot;o&quot;</span>,<span class="st">&quot;*&quot;</span>,<span class="st">&quot;+&quot;</span>),<span class="dt">lty=</span><span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>), <span class="dt">ncol=</span><span class="dv">1</span>)</span></code></pre></div>
+<p><img src="kinsb_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+</div>
+<div id="spss-1" class="section level2" number="5.7">
+<h2><span class="header-section-number">5.7</span> SPSS</h2>
+<pre><code>GGRAPH
+  /GRAPHDATASET NAME=&quot;graphdataset&quot; VARIABLES=x MEAN(y)[name=&quot;MEAN_y&quot;] MISSING=LISTWISE 
+    REPORTMISSING=NO
+  /GRAPHSPEC SOURCE=INLINE.
+BEGIN GPL
+  SOURCE: s=userSource(id(&quot;graphdataset&quot;))
+  DATA: x=col(source(s), name(&quot;x&quot;), unit.category())
+  DATA: MEAN_y=col(source(s), name(&quot;MEAN_y&quot;))
+  GUIDE: axis(dim(1), label(&quot;x&quot;))
+  GUIDE: axis(dim(2), label(&quot;Mean y&quot;))
+  GUIDE: text.title(label(&quot;Simple Line Mean of y by x&quot;))
+  SCALE: linear(dim(2), include(0))
+  ELEMENT: line(position(x*MEAN_y), missing.wings())
+END GPL.</code></pre>
+
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="13">
+<li id="fn13"><p>This is optional; you can run the script directly in the <code>Console</code> panel in RStudio<a href="simple-line-graph.html#fnref13" class="footnote-back">↩︎</a></p></li>
+<li id="fn14"><p>This is optional; you can run the script directly in the <code>Console</code> panel in RStudio<a href="simple-line-graph.html#fnref14" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="hypothesis-testing.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="power-effectsize.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["kinsb.pdf", "kinsb.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

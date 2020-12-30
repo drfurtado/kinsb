@@ -1,0 +1,62 @@
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+# K Independent Samples {#k-ind-samples}
+
+In this chapter you you will learn how to test the mean differences between more than 2 samples. First, you will learn the basics of a procedure called **One-Way ANOVA**, which is a parametric test.
+
+## SPSS Video & Written Tutorials
+
+This chapter is under development. In the meantime, refer to the material below to learn how to run the One-Way ANOVA and Kruskal-Wallis tests, including the interpretation of results.
+
+| Analysis       |  Par or NonPar |                                       Video                                      |                                               Written                                               |
+|:---------------|:--------------:|:--------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------:|
+| One-Way ANOVA  |   Parametric   | [link](https://www.youtube.com/playlist?list=PLnzR9sxztMowTbYGoiSnkeE5UqxVV7e6L) |     [link](https://statistics.laerd.com/spss-tutorials/one-way-anova-using-spss-statistics.php)     |
+| Kruskal-Wallis | Non-Parametric | [link](https://www.youtube.com/playlist?list=PLnzR9sxztMozgu3nH8XopS4oW0Ed0LAXs) | [link](https://statistics.laerd.com/spss-tutorials/kruskal-wallis-h-test-using-spss-statistics.php) |
+
+: SPSS Video and Video Tutorials
+
+## Practice
+
+While in class, you will be asked to complete practice exercises using the following information:
+
+### **Dataset**
+
+-   [Download](https://canvas.csun.edu/courses/86127/files/11070842/download?wrap=1 "ksb-data02.sav") the dataset for this practice
+
+### **Research questions**[^ch-k-ind-samples-1]
+
+[^ch-k-ind-samples-1]: Even if you could use the t-test to answer some of the questions below, choose an F-test (analysis of variance test)
+
+1.  Are boys and girls different when comes to bmi levels?
+2.  Do girls from three different grade levels (6, 7, 8) perform differently on the pacer test?
+3.  Do girls and boys from three different ethnicity groups (White, African American, and Asian) differ on the Shuttle-Run Post-test?
+4.  Do girls and boys from three different grade levels (6, 7, 8) perform differently on the skill of throw?
+5.  Do boys and girls perform differently on the skill of throw?
+
+**For each of the research questions above, provide the following:**
+
+1.  state the DV and the IV as well as the level of each of the variables (nominal, ordinal, scale)
+2.  state the Ho and Ha
+3.  state the level of significance the hypothesis will be tested (alpha level)
+4.  if DV is continuous (interval or ratio), assume for now it normal
+5.  based on the information provided in 4, state the procedure that will be used to test the hypothesis and provide 3 reasons why
+6.  If needed, run the normality test with plots
+
+**After conducting the test, provide the following:**
+
+1.  the test statistic
+2.  p-value calculated
+3.  critical value required to reject the Ho
+4.  was there a need for post-hoc analysis?
+5.  what is the final decision?
+6.  reject or keep the null? why?
+
+### **A few things to consider:**
+
+1.  [Check this note](https://hyp.is/vnqKalsOEemt3_uboggCYw/statistics.laerd.com/statistical-guides/one-way-anova-statistical-guide-3.php) on the robust test of equality of means
+
+2.  [Check this note](https://hyp.is/9EgQ0h1sEeu0WPOOuv_5-Q/statistics.laerd.com/spss-tutorials/kruskal-wallis-h-test-using-spss-statistics.php) on when to choose the Kruskal-Wallis mean ranks or median tests
+
+ 

@@ -1,0 +1,110 @@
+---
+title: "One-Sample t-test"
+author: "Ovande Furtado, Jr., Ph.D. | Cal State Northridge | KIN 610"
+output:
+  revealjs::revealjs_presentation:
+    self_contained: false
+    reveal_plugins: ["notes", "search", "chalkboard"]
+    css: styles.css
+    reveal_options:
+      slideNumber: true
+      previewLinks: true 
+---
+
+# Parametric vs Non-parametric
+
+```{r echo=FALSE, out.width="60%", fig.align='center'}
+knitr::include_graphics("https://www.dropbox.com/s/xy4fwffzlklyvdz/image1.png?raw=1")
+```
+
+Use the table above to decide when to use a parametric or non-parametric test.
+
+<aside class="notes">
+		Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit »S« on your keyboard).
+	</aside>
+
+# Objectives
+
+After studying chapters 11 & 12, students should be able to:
+
+> - understand the fundamentals of t-test
+> - learn the steps used to calculate two types of t-tests (independent and paired-samples)
+> - interpret SPSS output and write up the results
+> - understand the difference between statistical significance and practical significance
+
+# Analyzing mean differences
+
+**One-Sample:** 
+
+- A sample mean may be used as an estimate of a population mean.
+
+> - Can test the probability that the population mean lies within a certain CI using the sample mean as a predictor.
+
+**Now, we will reverse the technique above**
+
+> - To determine whether a given sample is likely to have been randomly selected from a specific population.
+> - In theory, if two samples drawn (randomly) from the sample population, their means should be the same (or similar) --> Now...
+
+# Analyzing mean differences
+
+If *two* samples were drawn from the **same population** and their means are **statistically different**, then:
+
+> 1. One or both samples were not randomly drawn from the population
+> 2. Some factor has affected one or both samples, causing them to deviate from the population from which they were originally drawn.
+
+> - When we conduct a research project and have reason to believe that two groups are different & we are dealing with parametric data (interval & ratio), a t-test may be used to test statistical significance.
+
+# Analyzing mean differences
+
+> - Data must be a continuous scale (ratio or interval)
+> - Basic design
+>   + Control group (e.g., gets the placebo)
+>   + Treatment/experimental group (e.g., gets the innovative intervention)
+> - We would not expect the means to be identical, they would likely be different
+> - t-test answers the following question:
+>   + Is there a statistical difference between the control and the experimental groups? Or…
+>   + Is there a statistical difference between males and females on a given dependent variable?
+
+# Assumptions of *t*-tests
+
+> - Variables --> 1 DV & 1 IV (max two levels)^[male/female; pre/post-test; etc.]
+> - Sample distribution normal (check for normality before proceeding)
+>   + If normal --> proceed with test
+>   + If NOT normal, n = 30 or more & **randomly drawn from a population** ($\mu$), then proceed with test
+>   + Otherwise, choose the **Mann-Whitney U-test**
+
+# Assumptions of *t*-test (cont.)
+
+> - Homogeneity of variance (shouldn’t be more than twice as large as the variance of the other)
+>   + For more accuracy use the Levene’s test
+> - Parametric data (interval or ratio scales)
+
+# References {.smaller .emphasized}
+
+<div class="container">
+
+<div class="col">
+![](logo2.png)
+</div>
+
+<div class="col">
+1. Anon. n.d. “(4) If You Have a Negative t-Value of -1.10 and a p-Value of 0.2753 What Does This Mean? - Quora.” Retrieved November 8, 2016a (https://www.quora.com/If-you-have-a-negative-t-value-of-1-10-and-a-p-value-of-0-2753-what-does-this-mean).
+2. Anon. n.d. “Student’s t-Test in R and by Hand: How to Compare Two Groups under Different Scenarios.” Stats and R. Retrieved March 20, 2020b (https://www.statsandr.com/blog/student-s-t-test-in-r-and-by-hand-how-to-compare-two-groups-under-different-scenarios/).
+3. Anon. n.d. Two-Sample t Test in R (Independent Groups) with Example | R Tutorial 4.2 | MarinStatsLectures.
+</div>
+
+</div>
+
+# two colums
+
+<div class="container">
+
+<div class="col">
+Column 1 Content
+</div>
+
+<div class="col">
+Column 2 Content
+</div>
+
+</div>

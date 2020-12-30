@@ -1,0 +1,23 @@
+h1:organizing-and-displaying-data Organizing and Displaying Data
+h2:introduction Introduction
+h2:line-graphs Line Graphs
+h3:simple-line-graph Simple line graph
+fig:simple-line-1 Simple graph line without title nor lines
+fig:simple-line-2 Simple graph with titles but no lines
+fig:simple-line-3 Simple graph line with titles and lines
+fig:simple-line-4 Simple graph line with titles, different line density, and color
+h3:multiple-lines-graph Multiple lines graph
+fig:multi-line-1 Multi line graph - first line
+fig:multi-line-2 Multi line graph - second line added
+fig:multi-line-3 Multi line graph - third line added
+fig:multi-line-4 Multi line graph - remove space and add label
+h3:multiple-lines-graph-with-legends Multiple lines graph (with legends)
+h3:line-graphs-in-spss Line Graphs in SPSS
+h2:boxplots Boxplots
+h2:bar-graphs Bar Graphs
+h2:scatter-plots Scatter Plots
+h2:normality-tests-with-plots Normality Tests with Plots
+h3:histograms Histograms
+h3:load-the-data Load the data
+h3:summary Summary
+

@@ -1,0 +1,37 @@
+# Fundamental Concepts {#fundamentals}
+
+## Measurement
+
+The reason is simple. Statistics would not exist without the concept of measurement. **Measurement** "is the process of comparing a value to a standard"[@vincentStatisticsKinesiology2012].
+
+When Iverson measures his 3rd-grade students' proficiency on the vertical jump, he is comparing the performance with a standard, which in this particular case is how far up students can reach (inches).
+A measuring tape (the instrument) is used to collect bits of information. The information collected through this process is called data.
+
+Data can be quantitative or qualitative in nature. In the example above, the resulting data are quantitative, owing to the level of precision involved in the collection of data. A score of 15 inches assigned to a performer on the vertical jump test is not open for interpretation; it's a precise (objective) measurement.
+
+On the other hand, if Iverson decides to assess (not measure) the qualitative aspects of the vertical jump (the form of the movement), he would have to rely on a different - more subjective - type of instrument.
+The FG-COMPASS [@furtadoReliabilityClassificationDecisions2012] is an example of such a test.
+Participants are assessed on a scale from 1 through 4, with 1 being less proficient and 4 being more proficient.
+
+Iverson and his assistant may disagree when assigning scores to a given performance.
+Some disagreement is accepted, even expected, between observers, owing to the subjective nature of the scale being used. Inter-rater reliability, sometimes called objectivity, can be used to verify the level of agreement.
+
+## Variables
+
+In the context of Statistics, variables can be classified into two general types: numerical or categorical.
+Numerical variables can take on
+
+### Types of variables
+
+### Classification of data
+
+### Choosing the correct test
+
+Choosing the correct test for a particular research study is not an easy task.
+This is mainly because one... book, and any statistics resource for that matter, will not be very helpful if you didn't do your homework and by that I mean:
+
+spent time drafting your research question(s) and hypothesis(es); list your dependent variable(s) and independent variable(s) for each of the proposed hypotheses.
+An example will help illustrate the point being made here.To get started, let's import a dataset (data01), which is saved in my computer.
+
+**Step 1** In Step 1, we will import the data from its online location\^[If working off-line, ensure to download the data prior to running .
+

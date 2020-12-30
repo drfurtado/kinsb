@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 7 K Independent Samples | Kinesiology Statistics book - A Guide to Data Analysis &amp; Interpretation</title>
+  <meta name="description" content="Chapter 7 K Independent Samples | Kinesiology Statistics book - A Guide to Data Analysis &amp; Interpretation" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 7 K Independent Samples | Kinesiology Statistics book - A Guide to Data Analysis &amp; Interpretation" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="images/book-cover.png" />
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 7 K Independent Samples | Kinesiology Statistics book - A Guide to Data Analysis &amp; Interpretation" />
+  
+  
+  <meta name="twitter:image" content="images/book-cover.png" />
+
+<meta name="author" content="Ovande Furtado, Jr., Ph.D." />
+
+
+<meta name="date" content="2020-11-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="two-independent-samples-2-ind-samples.html"/>
+<link rel="next" href="normality.html"/>
+<script src="libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">KIN Stats Book | Dr. Furtado</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="statistical-software.html"><a href="statistical-software.html"><i class="fa fa-check"></i><b>1</b> Statistical Software</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="statistical-software.html"><a href="statistical-software.html#package-download-installation"><i class="fa fa-check"></i><b>1.1</b> Package Download &amp; Installation</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="statistical-software.html"><a href="statistical-software.html#r-and-rstudio"><i class="fa fa-check"></i><b>1.1.1</b> <em>R</em> and RStudio</a></li>
+<li class="chapter" data-level="1.1.2" data-path="statistical-software.html"><a href="statistical-software.html#spss"><i class="fa fa-check"></i><b>1.1.2</b> SPSS</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="statistical-software.html"><a href="statistical-software.html#datasets"><i class="fa fa-check"></i><b>1.2</b> Datasets</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="fundamentals.html"><a href="fundamentals.html"><i class="fa fa-check"></i><b>2</b> Fundamental Concepts</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="fundamentals.html"><a href="fundamentals.html#measurement"><i class="fa fa-check"></i><b>2.1</b> Measurement</a></li>
+<li class="chapter" data-level="2.2" data-path="fundamentals.html"><a href="fundamentals.html#variables"><i class="fa fa-check"></i><b>2.2</b> Variables</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="fundamentals.html"><a href="fundamentals.html#types-of-variables"><i class="fa fa-check"></i><b>2.2.1</b> Types of variables</a></li>
+<li class="chapter" data-level="2.2.2" data-path="fundamentals.html"><a href="fundamentals.html#classification-of-data"><i class="fa fa-check"></i><b>2.2.2</b> Classification of data</a></li>
+<li class="chapter" data-level="2.2.3" data-path="fundamentals.html"><a href="fundamentals.html#choosing-the-correct-test"><i class="fa fa-check"></i><b>2.2.3</b> Choosing the correct test</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="fundamentals.html"><a href="fundamentals.html#symbols"><i class="fa fa-check"></i><b>2.3</b> Symbols</a></li>
+<li class="chapter" data-level="2.4" data-path="fundamentals.html"><a href="fundamentals.html#equations"><i class="fa fa-check"></i><b>2.4</b> Equations</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="descriptives.html"><a href="descriptives.html"><i class="fa fa-check"></i><b>3</b> Descriptive Statistics</a></li>
+<li class="chapter" data-level="4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html"><i class="fa fa-check"></i><b>4</b> Hypothesis Testing</a>
+<ul>
+<li class="chapter" data-level="" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#what-you-will-learn"><i class="fa fa-check"></i>What you will learn</a>
+<ul>
+<li class="chapter" data-level="" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#what-is-a-hypothesis"><i class="fa fa-check"></i>What is a hypothesis?</a></li>
+</ul></li>
+<li class="chapter" data-level="4.1" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#samples-and-populations"><i class="fa fa-check"></i><b>4.1</b> Samples and Populations</a></li>
+<li class="chapter" data-level="4.2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#the-null-hypothesis"><i class="fa fa-check"></i><b>4.2</b> The Null Hypothesis</a></li>
+<li class="chapter" data-level="4.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#the-research-hypothesis"><i class="fa fa-check"></i><b>4.3</b> The Research Hypothesis</a></li>
+<li class="chapter" data-level="4.4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#chapter-summary"><i class="fa fa-check"></i><b>4.4</b> Chapter Summary</a></li>
+<li class="chapter" data-level="4.5" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#practice-exercises"><i class="fa fa-check"></i><b>4.5</b> Practice Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html"><i class="fa fa-check"></i><b>5</b> Organizing and Displaying Data</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#introduction"><i class="fa fa-check"></i><b>5.1</b> Introduction</a></li>
+<li class="chapter" data-level="5.2" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#line-graphs"><i class="fa fa-check"></i><b>5.2</b> Line Graphs</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#simple-line-graph"><i class="fa fa-check"></i><b>5.2.1</b> Simple line graph</a></li>
+<li class="chapter" data-level="5.2.2" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#multiple-lines-graph"><i class="fa fa-check"></i><b>5.2.2</b> Multiple lines graph</a></li>
+<li class="chapter" data-level="5.2.3" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#multiple-lines-graph-with-legends"><i class="fa fa-check"></i><b>5.2.3</b> Multiple lines graph (with legends)</a></li>
+<li class="chapter" data-level="5.2.4" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#line-graphs-in-spss"><i class="fa fa-check"></i><b>5.2.4</b> Line Graphs in SPSS</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#boxplots"><i class="fa fa-check"></i><b>5.3</b> Boxplots</a></li>
+<li class="chapter" data-level="5.4" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#bar-graphs"><i class="fa fa-check"></i><b>5.4</b> Bar Graphs</a></li>
+<li class="chapter" data-level="5.5" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#scatter-plots"><i class="fa fa-check"></i><b>5.5</b> Scatter Plots</a></li>
+<li class="chapter" data-level="5.6" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#normality-tests-with-plots"><i class="fa fa-check"></i><b>5.6</b> Normality Tests with Plots</a>
+<ul>
+<li class="chapter" data-level="5.6.1" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#histograms"><i class="fa fa-check"></i><b>5.6.1</b> Histograms</a></li>
+<li class="chapter" data-level="5.6.2" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#load-the-data"><i class="fa fa-check"></i><b>5.6.2</b> Load the data</a></li>
+<li class="chapter" data-level="5.6.3" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#summary"><i class="fa fa-check"></i><b>5.6.3</b> Summary</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="two-independent-samples-2-ind-samples.html"><a href="two-independent-samples-2-ind-samples.html"><i class="fa fa-check"></i><b>6</b> Two Independent Samples {#2-ind-samples}</a></li>
+<li class="chapter" data-level="7" data-path="k-ind-samples.html"><a href="k-ind-samples.html"><i class="fa fa-check"></i><b>7</b> K Independent Samples</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="k-ind-samples.html"><a href="k-ind-samples.html#spss-video-written-tutorials"><i class="fa fa-check"></i><b>7.1</b> SPSS Video &amp; Written Tutorials</a></li>
+<li class="chapter" data-level="7.2" data-path="k-ind-samples.html"><a href="k-ind-samples.html#practice"><i class="fa fa-check"></i><b>7.2</b> Practice</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="k-ind-samples.html"><a href="k-ind-samples.html#dataset"><i class="fa fa-check"></i><b>7.2.1</b> <strong>Dataset</strong></a></li>
+<li class="chapter" data-level="7.2.2" data-path="k-ind-samples.html"><a href="k-ind-samples.html#research-questionsch-k-ind-samples-1"><i class="fa fa-check"></i><b>7.2.2</b> <strong>Research questions</strong></a></li>
+<li class="chapter" data-level="7.2.3" data-path="k-ind-samples.html"><a href="k-ind-samples.html#a-few-things-to-consider"><i class="fa fa-check"></i><b>7.2.3</b> <strong>A few things to consider:</strong></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="normality.html"><a href="normality.html"><i class="fa fa-check"></i><b>8</b> Testing for Normality</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="normality.html"><a href="normality.html#prerequisites"><i class="fa fa-check"></i><b>8.1</b> Prerequisites</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Kinesiology Statistics book - A Guide to Data Analysis &amp; Interpretation</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="k-ind-samples" class="section level1" number="7">
+<h1><span class="header-section-number">Chapter 7</span> K Independent Samples</h1>
+<p>In this chapter you you will learn how to test the mean differences between more than 2 samples. First, you will learn the basics of a procedure called <strong>One-Way ANOVA</strong>, which is a parametric test.</p>
+<div id="spss-video-written-tutorials" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> SPSS Video &amp; Written Tutorials</h2>
+<p>This chapter is under development. In the meantime, refer to the material below to learn how to run the One-Way ANOVA and Kruskal-Wallis tests, including the interpretation of results.</p>
+<table>
+<caption>SPSS Video and Video Tutorials</caption>
+<thead>
+<tr class="header">
+<th>Analysis</th>
+<th align="center">Par or NonPar</th>
+<th align="center">Video</th>
+<th align="center">Written</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>One-Way ANOVA</td>
+<td align="center">Parametric</td>
+<td align="center"><a href="https://www.youtube.com/playlist?list=PLnzR9sxztMowTbYGoiSnkeE5UqxVV7e6L">link</a></td>
+<td align="center"><a href="https://statistics.laerd.com/spss-tutorials/one-way-anova-using-spss-statistics.php">link</a></td>
+</tr>
+<tr class="even">
+<td>Kruskal-Wallis</td>
+<td align="center">Non-Parametric</td>
+<td align="center"><a href="https://www.youtube.com/playlist?list=PLnzR9sxztMozgu3nH8XopS4oW0Ed0LAXs">link</a></td>
+<td align="center"><a href="https://statistics.laerd.com/spss-tutorials/kruskal-wallis-h-test-using-spss-statistics.php">link</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="practice" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> Practice</h2>
+<p>While in class, you will be asked to complete practice exercises using the following information:</p>
+<div id="dataset" class="section level3" number="7.2.1">
+<h3><span class="header-section-number">7.2.1</span> <strong>Dataset</strong></h3>
+<ul>
+<li><a href="https://canvas.csun.edu/courses/86127/files/11070842/download?wrap=1" title="ksb-data02.sav">Download</a> the dataset for this practice</li>
+</ul>
+</div>
+<div id="research-questionsch-k-ind-samples-1" class="section level3" number="7.2.2">
+<h3><span class="header-section-number">7.2.2</span> <strong>Research questions</strong><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></h3>
+<ol style="list-style-type: decimal">
+<li>Are boys and girls different when comes to bmi levels?</li>
+<li>Do girls from three different grade levels (6, 7, 8) perform differently on the pacer test?</li>
+<li>Do girls and boys from three different ethnicity groups (White, African American, and Asian) differ on the Shuttle-Run Post-test?</li>
+<li>Do girls and boys from three different grade levels (6, 7, 8) perform differently on the skill of throw?</li>
+<li>Do boys and girls perform differently on the skill of throw?</li>
+</ol>
+<p><strong>For each of the research questions above, provide the following:</strong></p>
+<ol style="list-style-type: decimal">
+<li>state the DV and the IV as well as the level of each of the variables (nominal, ordinal, scale)</li>
+<li>state the Ho and Ha</li>
+<li>state the level of significance the hypothesis will be tested (alpha level)</li>
+<li>if DV is continuous (interval or ratio), assume for now it normal</li>
+<li>based on the information provided in 4, state the procedure that will be used to test the hypothesis and provide 3 reasons why</li>
+<li>If needed, run the normality test with plots</li>
+</ol>
+<p><strong>After conducting the test, provide the following:</strong></p>
+<ol style="list-style-type: decimal">
+<li>the test statistic</li>
+<li>p-value calculated</li>
+<li>critical value required to reject the Ho</li>
+<li>was there a need for post-hoc analysis?</li>
+<li>what is the final decision?</li>
+<li>reject or keep the null? why?</li>
+</ol>
+</div>
+<div id="a-few-things-to-consider" class="section level3" number="7.2.3">
+<h3><span class="header-section-number">7.2.3</span> <strong>A few things to consider:</strong></h3>
+<ol style="list-style-type: decimal">
+<li><p><a href="https://hyp.is/vnqKalsOEemt3_uboggCYw/statistics.laerd.com/statistical-guides/one-way-anova-statistical-guide-3.php">Check this note</a> on the robust test of equality of means</p></li>
+<li><p><a href="https://hyp.is/9EgQ0h1sEeu0WPOOuv_5-Q/statistics.laerd.com/spss-tutorials/kruskal-wallis-h-test-using-spss-statistics.php">Check this note</a> on when to choose the Kruskal-Wallis mean ranks or median tests</p></li>
+</ol>
+<p> </p>
+
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>Even if you could use the t-test to answer some of the questions below, choose an F-test (analysis of variance test)<a href="k-ind-samples.html#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="two-independent-samples-2-ind-samples.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="normality.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["kinsb.pdf", "kinsb.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>

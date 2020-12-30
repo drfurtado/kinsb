@@ -1,0 +1,5 @@
+# Two Independent Samples {#2-ind-samples}
+
+We describe our methods in this chapter.
+
+![](images/test.png)

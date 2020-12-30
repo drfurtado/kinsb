@@ -1,0 +1,915 @@
+{
+    "sources": [
+        {
+            "URL": "http://yihui.name/knitr/",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "edition": "2nd",
+            "id": "xie2015",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015
+                    ]
+                ]
+            },
+            "note": "ISBN 978-1498716963",
+            "publisher": "Chapman; Hall/CRC",
+            "publisher-place": "Boca Raton, Florida",
+            "title": "Dynamic documents with R and knitr",
+            "type": "book"
+        },
+        {
+            "ISBN": "978-1-4504-2888-0",
+            "author": [
+                {
+                    "family": "Vincent",
+                    "given": "William"
+                },
+                {
+                    "family": "Weir",
+                    "given": "Joseph"
+                }
+            ],
+            "edition": "4th",
+            "id": "vincentStatisticsKinesiology2012",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "language": "en-US",
+            "number-of-pages": "394",
+            "publisher": "Human Kinetics",
+            "publisher-place": "Champaign, IL",
+            "title": "Statistics in Kinesiology",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Vincent",
+                    "given": "W. J."
+                },
+                {
+                    "family": "Weir",
+                    "given": "J. P."
+                }
+            ],
+            "edition": "4th Ed.",
+            "id": "vincentStatisticsKinesiology2012",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "publisher": "Human Kinetics",
+            "publisher-place": "Champaign, IL",
+            "title": "Statistics in kinesiology",
+            "type": "book"
+        },
+        {
+            "DOI": "10.5641/027013612802573021",
+            "abstract": "Mastery of fundamental movement skills (FMS) is an important factor in preventing weight gain and increasing physical activity. To master FMS, performance evaluation is necessary. In this study, we investigated the reliability of a new observational assessment tool. In Phase I, 110 video clips of children performing five locomotor, and six manipulative FMSs were developed. In Phase II, rating scales were developed, and their efficacy was evaluated by comparing judgments of 30 undergraduate students to a standard. The mean weighted kappa (.71) was considered good (range .51-.85). Of the 11 rating scales, 6 were modified, and 5 remained unchanged. This study sets the foundation for the development of a new observational scale to assess fundamental movement skills.",
+            "author": [
+                {
+                    "family": "Furtado",
+                    "given": "Ovande"
+                },
+                {
+                    "family": "Gallagher",
+                    "given": "Jere D."
+                }
+            ],
+            "container-title": "Research Quarterly for Exercise and Sport",
+            "id": "furtadoReliabilityClassificationDecisions2012c",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "keyword": "Gross motor skills,Rating Scale Effectiveness",
+            "page": "383-390",
+            "title": "The reliability of classification decisions for the Furtado-Gallagher Computerized Observational Movement Pattern Assessment System - FG-COMPASS",
+            "type": "article-journal",
+            "volume": "83"
+        },
+        {
+            "DOI": "10.1080/02701367.2012.10599872",
+            "abstract": "Mastery of fundamental movement skills (FMS) is an important factor in preventing weight gain and increasing physical activity. To master FMS, performance evaluation is necessary. In this study, we investigated the reliability of a new observational assessment tool. In Phase I, 110 video clips of children performing five locomotor, and six manipulative FMSs were developed. In Phase II, rating scales were developed, and their efficacy was evaluated by comparing judgments of 30 undergraduate students to a standard. The mean weighted kappa (.71) was considered good (range .51-.85). Of the 11 rating scales, 6 were modified, and 5 remained unchanged. This study sets the foundation for the development of a new observational scale to assess fundamental movement skills.",
+            "author": [
+                {
+                    "family": "Furtado Jr.",
+                    "given": "Ovande"
+                },
+                {
+                    "family": "Gallagher",
+                    "given": "Jere D"
+                }
+            ],
+            "container-title": "Research Quarterly for Exercise and Sport",
+            "id": "furtadoReliabilityClassificationDecisions2012",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "keyword": "Gross motor skills,Rating Scale Effectiveness",
+            "page": "383-390",
+            "title": "The reliability of classification decisions for the Furtado-Gallagher Computerized Observational Movement Pattern Assessment System - FG-COMPASS",
+            "type": "article-journal",
+            "volume": "83"
+        },
+        {
+            "DOI": "10.5641/027013612802573021",
+            "abstract": "Mastery of fundamental movement skills (FMS) is an important factor in preventing weight gain and increasing physical activity. To master FMS, performance evaluation is necessary. In this study, we investigated the reliability of a new observational assessment tool. In Phase I, 110 video clips of children performing five locomotor, and six manipulative FMSs were developed. In Phase II, rating scales were developed, and their efficacy was evaluated by comparing judgments of 30 undergraduate students to a standard. The mean weighted kappa (.71) was considered good (range .51-.85). Of the 11 rating scales, 6 were modified, and 5 remained unchanged. This study sets the foundation for the development of a new observational scale to assess fundamental movement skills.",
+            "author": [
+                {
+                    "family": "Furtado Jr.",
+                    "given": "Ovande"
+                },
+                {
+                    "family": "Gallagher",
+                    "given": "Jere D."
+                }
+            ],
+            "container-title": "Research Quarterly for Exercise and Sport",
+            "id": "furtadoReliabilityClassificationDecisions2012",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "keyword": "Gross motor skills,Rating Scale Effectiveness",
+            "page": "383-390",
+            "title": "The Reliability of Classification Decisions for the Furtado-Gallagher Computerized Observational Movement Pattern Assessment System–FG-COMPASS",
+            "type": "article-journal",
+            "volume": "83"
+        },
+        {
+            "DOI": "10.5641/027013612802573021",
+            "abstract": "Mastery of fundamental movement skills (FMS) is an important factor in preventing weight gain and increasing physical activity. To master FMS, performance evaluation is necessary. In this study, we investigated the reliability of a new observational assessment tool. In Phase I, 110 video clips of children performing five locomotor, and six manipulative FMSs were developed. In Phase II, rating scales were developed, and their efficacy was evaluated by comparing judgments of 30 undergraduate students to a standard. The mean weighted kappa (.71) was considered good (range .51-.85). Of the 11 rating scales, 6 were modified, and 5 remained unchanged. This study sets the foundation for the development of a new observational scale to assess fundamental movement skills.",
+            "author": [
+                {
+                    "family": "Furtado",
+                    "given": "Ovande"
+                },
+                {
+                    "family": "Gallagher",
+                    "given": "Jere"
+                }
+            ],
+            "container-title": "Research Quarterly for Exercise and Sport",
+            "id": "furtadoReliabilityClassificationDecisions2012",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "keyword": "Gross motor skills,Rating Scale Effectiveness",
+            "page": "383-390",
+            "title": "The reliability of classification decisions for the Furtado-Gallagher Computerized Observational Movement Pattern Assessment System - FG-COMPASS",
+            "type": "article-journal",
+            "volume": "83"
+        },
+        {
+            "DOI": "10.5641/027013612802573021",
+            "abstract": "Mastery of fundamental movement skills (FMS) is an important factor in preventing weight gain and increasing physical activity. To master FMS, performance evaluation is necessary. In this study, we investigated the reliability of a new observational assessment tool. In Phase I, 110 video clips of children performing five locomotor, and six manipulative FMSs were developed. In Phase II, rating scales were developed, and their efficacy was evaluated by comparing judgments of 30 undergraduate students to a standard. The mean weighted kappa (.71) was considered good (range .51-.85). Of the 11 rating scales, 6 were modified, and 5 remained unchanged. This study sets the foundation for the development of a new observational scale to assess fundamental movement skills.",
+            "author": [
+                {
+                    "family": "Furtado Jr.",
+                    "given": "Ovande"
+                },
+                {
+                    "family": "Gallagher",
+                    "given": "Jere D."
+                }
+            ],
+            "container-title": "Research Quarterly for Exercise and Sport",
+            "id": "furtadoReliabilityClassificationDecisions2012",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "keyword": "Gross motor skills,Rating Scale Effectiveness",
+            "page": "383-390",
+            "title": "The reliability of classification decisions for the Furtado-Gallagher Computerized Observational Movement Pattern Assessment System - FG-COMPASS",
+            "type": "article-journal",
+            "volume": "83"
+        },
+        {
+            "DOI": "10.5641/027013612802573021",
+            "abstract": "Mastery of fundamental movement skills (FMS) is an important factor in preventing weight gain and increasing physical activity. To master FMS, performance evaluation is necessary. In this study, we investigated the reliability of a new observational assessment tool. In Phase I, 110 video clips of children performing five locomotor, and six manipulative FMSs were developed. In Phase II, rating scales were developed, and their efficacy was evaluated by comparing judgments of 30 undergraduate students to a standard. The mean weighted kappa (.71) was considered good (range .51-.85). Of the 11 rating scales, 6 were modified, and 5 remained unchanged. This study sets the foundation for the development of a new observational scale to assess fundamental movement skills.",
+            "author": [
+                {
+                    "family": "Furtado Jr",
+                    "given": "Ovande"
+                },
+                {
+                    "family": "Gallagher",
+                    "given": "Jere D"
+                }
+            ],
+            "container-title": "Research Quarterly for Exercise and Sport",
+            "id": "furtadoReliabilityClassificationDecisions2012",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "keyword": "Gross motor skills,Rating Scale Effectiveness",
+            "page": "383-390",
+            "title": "The reliability of classification decisions for the Furtado-Gallagher Computerized Observational Movement Pattern Assessment System - FG-COMPASS",
+            "type": "article-journal",
+            "volume": "83"
+        },
+        {
+            "DOI": "10.1177/0031512518769205",
+            "URL": "http://dx.doi.org/10.1177/0031512518769205",
+            "author": [
+                {
+                    "family": "Furtado",
+                    "given": "Ovande"
+                },
+                {
+                    "family": "Gallagher",
+                    "given": "Jere D."
+                }
+            ],
+            "container-title": "Perceptual and Motor Skills",
+            "id": "Furtado2018",
+            "issued": {
+                "date-parts": [
+                    [
+                        2018,
+                        4,
+                        17
+                    ]
+                ]
+            },
+            "language": "en",
+            "page": "003151251876920",
+            "title": "Expert-rater agreement and inter-/intrarater reliability for the furtadoGallagher computerized observational movement pattern assessment system",
+            "type": "article-journal"
+        },
+        {
+            "DOI": "10.1177/0031512517724260",
+            "URL": "http://dx.doi.org/10.1177/0031512517724260",
+            "author": [
+                {
+                    "family": "Beals",
+                    "given": "Thomas C."
+                },
+                {
+                    "family": "Furtado",
+                    "given": "Ovande, Jr."
+                },
+                {
+                    "family": "Fontana",
+                    "given": "Fabio E."
+                }
+            ],
+            "container-title": "Perceptual and Motor Skills",
+            "id": "beals2017",
+            "issued": {
+                "date-parts": [
+                    [
+                        2017
+                    ]
+                ]
+            },
+            "language": "en",
+            "title": "Relative age effect and academic timing in american junior college baseball",
+            "type": "article-journal"
+        },
+        {
+            "URL": "https://www.R-project.org/",
+            "author": [
+                {
+                    "literal": "R Core Team"
+                }
+            ],
+            "id": "R-base",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "publisher": "R Foundation for Statistical Computing",
+            "publisher-place": "Vienna, Austria",
+            "title": "R: A language and environment for statistical computing",
+            "title-short": "R",
+            "type": "book"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=bookdown",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "id": "R-bookdown",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "note": "R package version 0.14",
+            "title": "Bookdown: Authoring books and technical documents with r markdown",
+            "title-short": "Bookdown",
+            "type": "book"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=knitr",
+            "author": [
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                }
+            ],
+            "id": "R-knitr",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "note": "R package version 1.25",
+            "title": "Knitr: A general-purpose package for dynamic report generation in r",
+            "title-short": "Knitr",
+            "type": "book"
+        },
+        {
+            "URL": "https://CRAN.R-project.org/package=rmarkdown",
+            "author": [
+                {
+                    "family": "Allaire",
+                    "given": "JJ"
+                },
+                {
+                    "family": "Xie",
+                    "given": "Yihui"
+                },
+                {
+                    "family": "McPherson",
+                    "given": "Jonathan"
+                },
+                {
+                    "family": "Luraschi",
+                    "given": "Javier"
+                },
+                {
+                    "family": "Ushey",
+                    "given": "Kevin"
+                },
+                {
+                    "family": "Atkins",
+                    "given": "Aron"
+                },
+                {
+                    "family": "Wickham",
+                    "given": "Hadley"
+                },
+                {
+                    "family": "Cheng",
+                    "given": "Joe"
+                },
+                {
+                    "family": "Chang",
+                    "given": "Winston"
+                },
+                {
+                    "family": "Iannone",
+                    "given": "Richard"
+                }
+            ],
+            "id": "R-rmarkdown",
+            "issued": {
+                "date-parts": [
+                    [
+                        2019
+                    ]
+                ]
+            },
+            "note": "R package version 1.16",
+            "title": "Rmarkdown: Dynamic documents for r",
+            "title-short": "Rmarkdown",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Tavakol",
+                    "given": "Mohsen"
+                },
+                {
+                    "family": "Dennick",
+                    "given": "Reg"
+                }
+            ],
+            "container-title": "International Journal of Medical Education",
+            "id": "tavakolMakingSenseCronbach2011",
+            "issued": {
+                "date-parts": [
+                    [
+                        2011
+                    ]
+                ]
+            },
+            "page": "53-55",
+            "title": "Making sense of Cronbach’s alpha",
+            "type": "article-journal",
+            "volume": "2"
+        },
+        {
+            "ISBN": "978-1-4504-2888-0",
+            "author": [
+                {
+                    "family": "Vincent",
+                    "given": "William"
+                },
+                {
+                    "family": "Weir",
+                    "given": "Joseph"
+                }
+            ],
+            "edition": "4th",
+            "id": "vincentStatisticsKinesiology2012",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "publisher": "Human Kinetics",
+            "publisher-place": "Champaign, IL",
+            "title": "Statistics in Kinesiology",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Vincent",
+                    "given": "W. J."
+                },
+                {
+                    "family": "Weir",
+                    "given": "J. P."
+                }
+            ],
+            "edition": "4th Ed.",
+            "id": "vincentStatisticsKinesiology2012",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "publisher": "Human Kinetics",
+            "publisher-place": "Champaign, IL",
+            "title": "Statistics in kinesiology",
+            "type": "book"
+        },
+        {
+            "DOI": "10.1080/02701367.2012.10599872",
+            "abstract": "Mastery of fundamental movement skills (FMS) is an important factor in preventing weight gain and increasing physical activity. To master FMS, performance evaluation is necessary. In this study, we investigated the reliability of a new observational assessment tool. In Phase I, 110 video clips of children performing five locomotor, and six manipulative FMSs were developed. In Phase II, rating scales were developed, and their efficacy was evaluated by comparing judgments of 30 undergraduate students to a standard. The mean weighted kappa (.71) was considered good (range .51-.85). Of the 11 rating scales, 6 were modified, and 5 remained unchanged. This study sets the foundation for the development of a new observational scale to assess fundamental movement skills.",
+            "author": [
+                {
+                    "family": "Furtado Jr.",
+                    "given": "Ovande"
+                },
+                {
+                    "family": "Gallagher",
+                    "given": "Jere D"
+                }
+            ],
+            "container-title": "Research Quarterly for Exercise and Sport",
+            "id": "furtadoReliabilityClassificationDecisions2012",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "keyword": "Gross motor skills,Rating Scale Effectiveness",
+            "page": "383-390",
+            "title": "The reliability of classification decisions for the Furtado-Gallagher Computerized Observational Movement Pattern Assessment System - FG-COMPASS",
+            "type": "article-journal",
+            "volume": "83"
+        },
+        {
+            "DOI": "10.5641/027013612802573021",
+            "abstract": "Mastery of fundamental movement skills (FMS) is an important factor in preventing weight gain and increasing physical activity. To master FMS, performance evaluation is necessary. In this study, we investigated the reliability of a new observational assessment tool. In Phase I, 110 video clips of children performing five locomotor, and six manipulative FMSs were developed. In Phase II, rating scales were developed, and their efficacy was evaluated by comparing judgments of 30 undergraduate students to a standard. The mean weighted kappa (.71) was considered good (range .51-.85). Of the 11 rating scales, 6 were modified, and 5 remained unchanged. This study sets the foundation for the development of a new observational scale to assess fundamental movement skills.",
+            "author": [
+                {
+                    "family": "Furtado Jr.",
+                    "given": "Ovande"
+                },
+                {
+                    "family": "Gallagher",
+                    "given": "Jere D."
+                }
+            ],
+            "container-title": "Research Quarterly for Exercise and Sport",
+            "id": "furtadoReliabilityClassificationDecisions2012",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "keyword": "Gross motor skills,Rating Scale Effectiveness",
+            "page": "383-390",
+            "title": "The Reliability of Classification Decisions for the Furtado-Gallagher Computerized Observational Movement Pattern Assessment System–FG-COMPASS",
+            "type": "article-journal",
+            "volume": "83"
+        },
+        {
+            "DOI": "10.5641/027013612802573021",
+            "abstract": "Mastery of fundamental movement skills (FMS) is an important factor in preventing weight gain and increasing physical activity. To master FMS, performance evaluation is necessary. In this study, we investigated the reliability of a new observational assessment tool. In Phase I, 110 video clips of children performing five locomotor, and six manipulative FMSs were developed. In Phase II, rating scales were developed, and their efficacy was evaluated by comparing judgments of 30 undergraduate students to a standard. The mean weighted kappa (.71) was considered good (range .51-.85). Of the 11 rating scales, 6 were modified, and 5 remained unchanged. This study sets the foundation for the development of a new observational scale to assess fundamental movement skills.",
+            "author": [
+                {
+                    "family": "Furtado",
+                    "given": "Ovande"
+                },
+                {
+                    "family": "Gallagher",
+                    "given": "Jere"
+                }
+            ],
+            "container-title": "Research Quarterly for Exercise and Sport",
+            "id": "furtadoReliabilityClassificationDecisions2012",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "keyword": "Gross motor skills,Rating Scale Effectiveness",
+            "page": "383-390",
+            "title": "The reliability of classification decisions for the Furtado-Gallagher Computerized Observational Movement Pattern Assessment System - FG-COMPASS",
+            "type": "article-journal",
+            "volume": "83"
+        },
+        {
+            "DOI": "10.5641/027013612802573021",
+            "abstract": "Mastery of fundamental movement skills (FMS) is an important factor in preventing weight gain and increasing physical activity. To master FMS, performance evaluation is necessary. In this study, we investigated the reliability of a new observational assessment tool. In Phase I, 110 video clips of children performing five locomotor, and six manipulative FMSs were developed. In Phase II, rating scales were developed, and their efficacy was evaluated by comparing judgments of 30 undergraduate students to a standard. The mean weighted kappa (.71) was considered good (range .51-.85). Of the 11 rating scales, 6 were modified, and 5 remained unchanged. This study sets the foundation for the development of a new observational scale to assess fundamental movement skills.",
+            "author": [
+                {
+                    "family": "Furtado Jr.",
+                    "given": "Ovande"
+                },
+                {
+                    "family": "Gallagher",
+                    "given": "Jere D."
+                }
+            ],
+            "container-title": "Research Quarterly for Exercise and Sport",
+            "id": "furtadoReliabilityClassificationDecisions2012",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "keyword": "Gross motor skills,Rating Scale Effectiveness",
+            "page": "383-390",
+            "title": "The reliability of classification decisions for the Furtado-Gallagher Computerized Observational Movement Pattern Assessment System - FG-COMPASS",
+            "type": "article-journal",
+            "volume": "83"
+        },
+        {
+            "DOI": "10.5641/027013612802573021",
+            "abstract": "Mastery of fundamental movement skills (FMS) is an important factor in preventing weight gain and increasing physical activity. To master FMS, performance evaluation is necessary. In this study, we investigated the reliability of a new observational assessment tool. In Phase I, 110 video clips of children performing five locomotor, and six manipulative FMSs were developed. In Phase II, rating scales were developed, and their efficacy was evaluated by comparing judgments of 30 undergraduate students to a standard. The mean weighted kappa (.71) was considered good (range .51-.85). Of the 11 rating scales, 6 were modified, and 5 remained unchanged. This study sets the foundation for the development of a new observational scale to assess fundamental movement skills.",
+            "author": [
+                {
+                    "family": "Furtado Jr",
+                    "given": "Ovande"
+                },
+                {
+                    "family": "Gallagher",
+                    "given": "Jere D"
+                }
+            ],
+            "container-title": "Research Quarterly for Exercise and Sport",
+            "id": "furtadoReliabilityClassificationDecisions2012",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "keyword": "Gross motor skills,Rating Scale Effectiveness",
+            "page": "383-390",
+            "title": "The reliability of classification decisions for the Furtado-Gallagher Computerized Observational Movement Pattern Assessment System - FG-COMPASS",
+            "type": "article-journal",
+            "volume": "83"
+        },
+        {
+            "DOI": "http://dx.doi.org/10.1037/h0026256",
+            "ISSN": "0033-2909",
+            "author": [
+                {
+                    "family": "Cohen",
+                    "given": "Jacob"
+                }
+            ],
+            "container-title": "Psychological Bulletin",
+            "id": "cohenWeightedKappaNominal1968",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        1968,
+                        10
+                    ]
+                ]
+            },
+            "keyword": "Mathematics (Concepts) (major),Scaling (Testing) (major),Statistical Analysis (major),Testing Methods (major)",
+            "page": "213-220",
+            "title": "Weighted kappa: Nominal scale agreement provision for scaled disagreement or partial credit.",
+            "title-short": "Weighted kappa",
+            "type": "article-journal",
+            "volume": "70"
+        },
+        {
+            "DOI": "http://dx.doi.org/10.1037/h0026256",
+            "ISSN": "0033-2909",
+            "author": [
+                {
+                    "family": "Cohen",
+                    "given": "Jacob"
+                }
+            ],
+            "container-title": "Psychological Bulletin",
+            "id": "cohenWeightedKappaNominal1968",
+            "issue": "4",
+            "issued": {
+                "date-parts": [
+                    [
+                        1968,
+                        10
+                    ]
+                ]
+            },
+            "keyword": "Mathematics (Concepts) (major),Scaling (Testing) (major),Statistical Analysis (major),Testing Methods (major)",
+            "page": "213-220",
+            "title": "Weighted kappa: Nominal scale agreement provision for scaled disagreement or partial credit.",
+            "title-short": "Weighted kappa",
+            "type": "article-journal",
+            "volume": "70"
+        },
+        {
+            "container-title": "Wikipedia",
+            "id": "OpenSource2020",
+            "issued": {
+                "date-parts": [
+                    [
+                        2020,
+                        2
+                    ]
+                ]
+            },
+            "note": "Page Version ID: 940118335",
+            "title": "Open source",
+            "type": "article-journal"
+        },
+        {
+            "author": [
+                {
+                    "family": "Furtado",
+                    "given": "Ovande"
+                }
+            ],
+            "genre": "Master’s Thesis",
+            "id": "furtadoFurtadoGallagherMovementSkill2004b",
+            "issued": {
+                "date-parts": [
+                    [
+                        2004
+                    ]
+                ]
+            },
+            "keyword": "movement concepts; assessment; furtado; motor skills; physical education; ovande; Master’s Thesis; Master of Science",
+            "publisher": "University of Pittsburgh",
+            "publisher-place": "Pittsburgh, PA",
+            "title": "Furtado-Gallagher Movement Skill Assessment: Collecting evidence for content-related validity",
+            "title-short": "Furtado-Gallagher Movement Skill Assessment",
+            "type": "thesis"
+        },
+        {
+            "DOI": "10.1590/abd1806-4841.20165254",
+            "ISSN": "0365-0596",
+            "PMCID": "PMC4938277",
+            "PMID": "27438200",
+            "author": [
+                {
+                    "family": "Martínez-Mesa",
+                    "given": "Jeovany"
+                },
+                {
+                    "family": "Gonz\\a’alez-Chica",
+                    "given": "David Alejandro"
+                },
+                {
+                    "family": "Duquia",
+                    "given": "Rodrigo Pereira"
+                },
+                {
+                    "family": "Bonamigo",
+                    "given": "Renan Rangel"
+                },
+                {
+                    "family": "Bastos",
+                    "given": "João Luiz"
+                }
+            ],
+            "container-title": "Anais Brasileiros de Dermatologia",
+            "id": "martinez-mesaSamplingHowSelect2016",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016
+                    ]
+                ]
+            },
+            "page": "326-330",
+            "title": "Sampling: How to select participants in my research study?",
+            "title-short": "Sampling",
+            "type": "article-journal",
+            "volume": "91"
+        },
+        {
+            "DOI": "10.3402/qhw.v11.31949",
+            "ISSN": "1748-2623",
+            "PMCID": "PMC4989179",
+            "PMID": "27534946",
+            "author": [
+                {
+                    "family": "Ross",
+                    "given": "Sharon E. Taverno"
+                },
+                {
+                    "family": "Francis",
+                    "given": "Lori A."
+                }
+            ],
+            "container-title": "International Journal of Qualitative Studies on Health and Well-being",
+            "id": "rossPhysicalActivityPerceptions2016",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        8
+                    ]
+                ]
+            },
+            "title": "Physical activity perceptions, context, barriers, and facilitators from a Hispanic child’s perspective",
+            "type": "article-journal",
+            "volume": "11"
+        },
+        {
+            "ISSN": "1079-2082",
+            "PMID": "11760921",
+            "author": [
+                {
+                    "family": "Slack",
+                    "given": "M. K."
+                },
+                {
+                    "family": "Draugalis",
+                    "given": "J. R."
+                }
+            ],
+            "container-title": "American journal of health-system pharmacy: AJHP: official journal of the American Society of Health-System Pharmacists",
+            "id": "slackEstablishingInternalExternal2001",
+            "issue": "22",
+            "issued": {
+                "date-parts": [
+                    [
+                        2001,
+                        11
+                    ]
+                ]
+            },
+            "keyword": "Double-Blind Method,Drug-Related Side Effects and Adverse Reactions,Mortality,Placebos,Random Allocation,Reproducibility of Results,Research Design,Scientific Misconduct,Selection Bias",
+            "page": "2173-2181; quiz 2182-2183",
+            "title": "Establishing the internal and external validity of experimental studies",
+            "type": "article-journal",
+            "volume": "58"
+        },
+        {
+            "DOI": "10.2105/AJPH.2007.126847",
+            "ISSN": "0090-0036",
+            "PMCID": "PMC2156062",
+            "PMID": "18048772",
+            "author": [
+                {
+                    "family": "Steckler",
+                    "given": "Allan"
+                },
+                {
+                    "family": "McLeroy",
+                    "given": "Kenneth R."
+                }
+            ],
+            "container-title": "American Journal of Public Health",
+            "id": "stecklerImportanceExternalValidity2008",
+            "issue": "1",
+            "issued": {
+                "date-parts": [
+                    [
+                        2008,
+                        1
+                    ]
+                ]
+            },
+            "page": "9-10",
+            "title": "The Importance of External Validity",
+            "type": "article-journal",
+            "volume": "98"
+        },
+        {
+            "author": [
+                {
+                    "family": "Beals",
+                    "given": "Thomas C"
+                },
+                {
+                    "family": "Furtado",
+                    "given": "Ovande, Jr."
+                },
+                {
+                    "family": "Fontana",
+                    "given": "Fabio E"
+                }
+            ],
+            "id": "beals2012",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012,
+                        4
+                    ]
+                ]
+            },
+            "page": "A-32",
+            "publisher": "AAHPERD",
+            "publisher-place": "Reston, VA",
+            "title": "American association for health, physical education, recreation and dance",
+            "type": "paper-conference",
+            "volume": "83"
+        }
+    ],
+    "project_biblios": [
+        "book.bib",
+        "packages.bib",
+        "references.bib"
+    ]
+}

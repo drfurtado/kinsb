@@ -1,0 +1,31 @@
+# Power & Effect Size {#power-effectsize}
+
+## What you will learn {.unnumbered}
+
+-   What is power and effect size
+
+## What is power?
+
+asasas
+
+## What is effect size
+
+Definition here...
+
+## Types of effect size
+
+In this section, we list and discuss several types of effect size.
+
+### Comparisons
+
+### Calculators
+
+There several online tools to calculate effect size. Below, I list some of these tools.
+
+#### Independent-samples t-test
+
+**Effect Size Calculator for t-test - Social Science Statistics**
+
+With this tool, you can calculate the:
+
+-   `Cohen's d` : appropriate when both groups have similar *sd* and are of the same size.

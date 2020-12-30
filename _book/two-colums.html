@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 15 two colums | One-Sample t-test</title>
+  <meta name="description" content="Chapter 15 two colums | One-Sample t-test" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 15 two colums | One-Sample t-test" />
+  <meta property="og:type" content="book" />
+  
+  <meta property="og:image" content="images/book-cover.png" />
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 15 two colums | One-Sample t-test" />
+  
+  
+  <meta name="twitter:image" content="images/book-cover.png" />
+
+<meta name="author" content="Ovande Furtado, Jr., Ph.D. | Cal State Northridge | KIN 610" />
+
+
+<meta name="date" content="2020-04-09" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="references-1.html"/>
+
+<script src="libs/header-attrs-2.1/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">KIN Stats Book | Dr. Furtado</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="statistical-software.html"><a href="statistical-software.html"><i class="fa fa-check"></i><b>1</b> Statistical Software</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="statistical-software.html"><a href="statistical-software.html#package-download-instalation"><i class="fa fa-check"></i><b>1.1</b> Package Download &amp; Instalation</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="statistical-software.html"><a href="statistical-software.html#r-and-rstudio"><i class="fa fa-check"></i><b>1.1.1</b> <em>R</em> and RStudio</a></li>
+<li class="chapter" data-level="1.1.2" data-path="statistical-software.html"><a href="statistical-software.html#spss"><i class="fa fa-check"></i><b>1.1.2</b> SPSS</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="statistical-software.html"><a href="statistical-software.html#datasets"><i class="fa fa-check"></i><b>1.2</b> Datasets</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="fundamentals.html"><a href="fundamentals.html"><i class="fa fa-check"></i><b>2</b> Fundamental Concepts</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="fundamentals.html"><a href="fundamentals.html#measurement"><i class="fa fa-check"></i><b>2.1</b> Measurement</a></li>
+<li class="chapter" data-level="2.2" data-path="fundamentals.html"><a href="fundamentals.html#variables"><i class="fa fa-check"></i><b>2.2</b> Variables</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="fundamentals.html"><a href="fundamentals.html#types-of-variables"><i class="fa fa-check"></i><b>2.2.1</b> Types of variables</a></li>
+<li class="chapter" data-level="2.2.2" data-path="fundamentals.html"><a href="fundamentals.html#classification-of-data"><i class="fa fa-check"></i><b>2.2.2</b> Classification of data</a></li>
+<li class="chapter" data-level="2.2.3" data-path="fundamentals.html"><a href="fundamentals.html#choosing-the-correct-test"><i class="fa fa-check"></i><b>2.2.3</b> Choosing the correct test</a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="fundamentals.html"><a href="fundamentals.html#symbols"><i class="fa fa-check"></i><b>2.3</b> Symbols</a></li>
+<li class="chapter" data-level="2.4" data-path="fundamentals.html"><a href="fundamentals.html#equations"><i class="fa fa-check"></i><b>2.4</b> Equations</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="descriptives.html"><a href="descriptives.html"><i class="fa fa-check"></i><b>3</b> Descriptive Statistics</a></li>
+<li class="chapter" data-level="4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html"><i class="fa fa-check"></i><b>4</b> Hypothesis Testing</a>
+<ul>
+<li class="chapter" data-level="" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#what-you-will-learn"><i class="fa fa-check"></i>What you will learn</a>
+<ul>
+<li class="chapter" data-level="" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#what-is-a-hypothesis"><i class="fa fa-check"></i>What is a hypothesis?</a></li>
+</ul></li>
+<li class="chapter" data-level="4.1" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#samples-and-populations"><i class="fa fa-check"></i><b>4.1</b> Samples and Populations</a></li>
+<li class="chapter" data-level="4.2" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#the-null-hypothesis"><i class="fa fa-check"></i><b>4.2</b> The Null Hypothesis</a></li>
+<li class="chapter" data-level="4.3" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#the-research-hypothesis"><i class="fa fa-check"></i><b>4.3</b> The Research Hypothesis</a></li>
+<li class="chapter" data-level="4.4" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#chapter-summary"><i class="fa fa-check"></i><b>4.4</b> Chapter Summary</a></li>
+<li class="chapter" data-level="4.5" data-path="hypothesis-testing.html"><a href="hypothesis-testing.html#practice-exercises"><i class="fa fa-check"></i><b>4.5</b> Practice Exercises</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html"><i class="fa fa-check"></i><b>5</b> Organizing and Displaying Data</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#introduction"><i class="fa fa-check"></i><b>5.1</b> Introduction</a></li>
+<li class="chapter" data-level="5.2" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#line-graphs"><i class="fa fa-check"></i><b>5.2</b> Line Graphs</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#simple-line-graph"><i class="fa fa-check"></i><b>5.2.1</b> Simple line graph</a></li>
+<li class="chapter" data-level="5.2.2" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#multiple-lines-graph"><i class="fa fa-check"></i><b>5.2.2</b> Multiple lines graph</a></li>
+<li class="chapter" data-level="5.2.3" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#multiple-lines-graph-with-legends"><i class="fa fa-check"></i><b>5.2.3</b> Multiple lines graph (with legends)</a></li>
+<li class="chapter" data-level="5.2.4" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#line-graphs-in-spss"><i class="fa fa-check"></i><b>5.2.4</b> Line Graphs in SPSS</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#boxplots"><i class="fa fa-check"></i><b>5.3</b> Boxplots</a></li>
+<li class="chapter" data-level="5.4" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#bar-graphs"><i class="fa fa-check"></i><b>5.4</b> Bar Graphs</a></li>
+<li class="chapter" data-level="5.5" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#scatter-plots"><i class="fa fa-check"></i><b>5.5</b> Scatter Plots</a></li>
+<li class="chapter" data-level="5.6" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#histograms"><i class="fa fa-check"></i><b>5.6</b> Histograms</a></li>
+<li class="chapter" data-level="5.7" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#normality-tests-with-plots"><i class="fa fa-check"></i><b>5.7</b> Normality Tests with Plots</a>
+<ul>
+<li class="chapter" data-level="5.7.1" data-path="organizing-and-displaying-data.html"><a href="organizing-and-displaying-data.html#histo"><i class="fa fa-check"></i><b>5.7.1</b> Histo</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="power-effectsize.html"><a href="power-effectsize.html"><i class="fa fa-check"></i><b>6</b> Power &amp; Effect Size</a>
+<ul>
+<li class="chapter" data-level="" data-path="power-effectsize.html"><a href="power-effectsize.html#what-you-will-learn-1"><i class="fa fa-check"></i>What you will learn</a></li>
+<li class="chapter" data-level="6.1" data-path="power-effectsize.html"><a href="power-effectsize.html#what-is-power"><i class="fa fa-check"></i><b>6.1</b> What is power?</a></li>
+<li class="chapter" data-level="6.2" data-path="power-effectsize.html"><a href="power-effectsize.html#what-is-effect-size"><i class="fa fa-check"></i><b>6.2</b> What is effect size</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="power-effectsize.html"><a href="power-effectsize.html#calculators"><i class="fa fa-check"></i><b>6.2.1</b> Calculators</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="chapter" data-level="7" data-path="parametric-vs-non-parametric.html"><a href="parametric-vs-non-parametric.html"><i class="fa fa-check"></i><b>7</b> Parametric vs Non-parametric</a></li>
+<li class="chapter" data-level="8" data-path="objectives.html"><a href="objectives.html"><i class="fa fa-check"></i><b>8</b> Objectives</a></li>
+<li class="chapter" data-level="9" data-path="analyzing-mean-differences.html"><a href="analyzing-mean-differences.html"><i class="fa fa-check"></i><b>9</b> Analyzing mean differences</a></li>
+<li class="chapter" data-level="10" data-path="analyzing-mean-differences-1.html"><a href="analyzing-mean-differences-1.html"><i class="fa fa-check"></i><b>10</b> Analyzing mean differences</a></li>
+<li class="chapter" data-level="11" data-path="analyzing-mean-differences-2.html"><a href="analyzing-mean-differences-2.html"><i class="fa fa-check"></i><b>11</b> Analyzing mean differences</a></li>
+<li class="chapter" data-level="12" data-path="assumptions-of-t-tests.html"><a href="assumptions-of-t-tests.html"><i class="fa fa-check"></i><b>12</b> Assumptions of <em>t</em>-tests</a></li>
+<li class="chapter" data-level="13" data-path="assumptions-of-t-test-cont-.html"><a href="assumptions-of-t-test-cont-.html"><i class="fa fa-check"></i><b>13</b> Assumptions of <em>t</em>-test (cont.)</a></li>
+<li class="chapter" data-level="14" data-path="references-1.html"><a href="references-1.html"><i class="fa fa-check"></i><b>14</b> References</a></li>
+<li class="chapter" data-level="15" data-path="two-colums.html"><a href="two-colums.html"><i class="fa fa-check"></i><b>15</b> two colums</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">One-Sample t-test</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="two-colums" class="section level1" number="15">
+<h1><span class="header-section-number">Chapter 15</span> two colums</h1>
+<div class="container">
+<div class="col">
+<p>Column 1 Content</p>
+</div>
+<div class="col">
+<p>Column 2 Content</p>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="references-1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["kinsb.pdf", "kinsb.epub"],
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

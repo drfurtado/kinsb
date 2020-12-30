@@ -1,0 +1,9 @@
+# Testing for Normality {#normality}
+
+In this chapter you you will learn how to test for normality.
+
+## Prerequisites
+
+Important things to consider:
+
+-   Test for normality within groups and consider a nonparametric statistical analysis if at least one is deemed not normal, once several sources of normality have been considered.

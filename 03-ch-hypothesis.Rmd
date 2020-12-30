@@ -1,0 +1,67 @@
+# Hypothesis Testing
+_____
+## What you will learn {-}
+* The difference between a sample and a population
+* The importance of the null and research hypotheses
+* The criteria for judging a good hypothesis
+
+### What is a hypothesis? {-}
+When used in the context of research, a hypothesis is a "educated guess". The researcher supposedly has some knowledge of the phenomenon under investigation; otherwise, it would simply be a “guess”. It reflects the general problem statement or question that is driving the research. In addition, it translates the problem or research question into a form that can be tested. 
+
+For instance, assume that a researcher formulates the following research question:
+```
+Are 8-11 yrs-of-age boys and girls different when comes to body mass index (bmi)?
+```
+The research question above is then translated into a hypothesis^[This is an example of a Null Hypothesis - aka H0] that can be tested and would have the following format:
+```
+There is no difference between 8-11 yrs-of-age boys and girls in relation to bmi. 
+```
+
+## Samples and Populations
+A researcher is always interested in the target population. When a sample is collected, the immediate focus is on the sample (Figure \@ref(fig:sam-pop)). However, the ultimate go is to generalize the results from the sample to the target population. This is not always easy and straighforward owing to the difficulties associated with sample representativeness(martinez2016). For instance, assume that Wagner wants to investigate physical activity perceptions among hispanic undergraduate students in California(ross2016).^[This example was inspirated by a study published by Ross et al.] 
+
+As an undergraduate at CSUN, he decides, against Dr. Furtados' suggestion, to collect data by going to the Student Recreation Center on campus. He spends three days surveying students as they leave the facility. In the end, Wagner collects data from 100 participants. Although, this can be considered a decent sample size, the sample is unlikely to be representative of the target population of hispanic undergraduate students in California. In this fictitious example, data were likely collected from a subset of the target population; i.e., hispanic undergraduate students who exercise regularly. Thus, the generalizaiton of results will be inpacted. The extent to which the results from Wagner's study can be generalized to the target population is called _external validity_. Besides the example cited here (selection bias), there are other threats to external validity. For more on this topic, read Steckler and McLeroy(steckler2008).         
+
+
+```{r sam-pop, out.width='50%', fig.align='center', fig.cap='Samples and Populations', echo=FALSE}
+knitr::include_graphics('images/ksb_fig_samples_pop.png')
+```
+
+## The Null Hypothesis
+The null hypothesis is statement that contains two ore more things that are equal (unrelated) to one another...
+
+
+
+## The Research Hypothesis
+A research hypothesis...
+
+In Example \@ref(exm:two-tail), the authors made sure to acknowledge they used a two-tailed test when testing their hypothesis.  
+
+
+```{example, two-tail}
+Data were analysed using paired **two-tailed** T tests and MANOVA. Reaction time and systolic blood pressure post-exercise were significantly increased following sleep deprivation (mean ± SD change: reaction time: 0.15 ± 0.04 s, p = 0.003; systolic BP: 6 ± 17 mmHg, p = 0.012).
+
+_Source_: Patrick, Y., Lee, A., Raha, O., Pillai, K., Gupta, S., Sethi, S., Mukeshimana, F., Gerard, L., Moghal, M. U., Saleh, S. N., Smith, S. F., Morrell, M. J., & Moss, J. (2017). Effects of sleep deprivation on cognitive and physical performance in university students. Sleep and biological rhythms, 15(3), 217–225.
+```
+
+  
+
+
+
+
+## Chapter Summary
+
+Example of an equation: 
+Standard error of the mean
+
+\sigma_{\overline{X}}=\frac{\sigma}{\sqrt{N}}
+
+## Practice Exercises
+
+
+
+
+
+
+
+

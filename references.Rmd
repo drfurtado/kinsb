@@ -1,0 +1,104 @@
+# References {.unnumbered}
+
+::: {#refs}
+:::
+
+# (APPENDIX) Appendices {.unnumbered}
+
+# Statistical Tables
+
+## Area Between the *Mean* and *Z*
+
+The table will be provided here...
+
+In the meantime, refer to [this online table](http://www.z-table.com/).
+
+## Correlation coefficient critical values
+
+The table will be provided here...
+
+In the meantime, refer to [this online table](https://researchbasics.education.uconn.edu/r_critical_value_table/#).
+
+# Phrasing Results
+
+This section is under development. In the meantime, refer to [this document](https://mycsun.box.com/s/rmejmcjyha44pv9w46p081dm6be3pn64) created by the Psychology Writing Center at the University of Washington.
+
+You may also want to [check this source](https://hyp.is/rKaOEiLKEeuvJLNy4Wp9Fg/apastyle.apa.org/instructional-aids/numbers-statistics-guide.pdf) to learn how to report several statistical terms/symbols in APA 7th ed.
+
+## Components
+
+Phrasing results using APA Style involves including required components as part of the write-up. See below some examples.
+
+### The test
+
+You must tell the reader what statistical procedure was used to test the hypothesis(ses). For instance,
+
+> A Paired-Samples t-test was used to....
+>
+> The compare the three groups, the One-Way ANOVA was employed...
+
+| Example here with....
+| *Source: T. Beals, O. Furtado, and F. Fontana, "American association for health, physical education, recreation and dance," 2012, vol. 83, pp. A--32.*
+
+# Statistical Software
+
+Since this ebook is being created with Biomedical students in mind, I decided cover *R* and SPSS. Wikipedia[^references-1] has a comprehensive list of statistical software, which is worth checking out.
+
+[^references-1]: List of statistical packages: <http://bit.ly/2pNLjqU>
+
+Below, I will show you how to download and install *R*, RStudio, and SPSS. I strongly recommend you to download the application of your choice and follow along.
+
+## Package Download & Installation
+
+In this section, you'll find all you need to get started with **RStudio** and **SPSS**. Both computer packages are available for Windows, Mac, and Linux.
+
+### *R* and RStudio
+
+*R* is an open-source computer package used for statistical data analysis and graphics. RStudio combines several tools in one single computer package, which helps one be more productive when using *R*. Although you can use *R* by itself, the tutorials for this book were developed using RStudio. Thus, to follow along, please download both *R* and RStudio.
+
+**Standalone Version**
+
+-   First, download and install *R* from this link[^references-2]: <http://bit.ly/3bBLKHO>
+-   Then, download and install RStudio from this link: <http://bit.ly/2D8H7EU>
+
+[^references-2]: RStudio will detect *R* the first time you run it.
+
+To take full advantage of *R*, you will need to install a few *R* packages[^references-3] as they are required to run most of the statistical analysis and to create graphs.
+
+[^references-3]: Follow this link to learn how to install packages in *R*: <http://bit.ly/2VlJ4sa>
+
+> YouTube[^references-4] has several video tutorials showing how to install these applications.
+
+[^references-4]: Visit this link to watch a video tutorial: <http://bit.ly/2OAnETa>
+
+**RStudio Cloud**
+
+If you don't want to download/install *R* and RStudio, you can use the cloud version of RStudio, provided you have access to the Internet. Simply, follow the link below to create a free account and use RStudio online, without the need to install anything in your computer.
+
+-   <https://rstudio.cloud>
+
+### SPSS
+
+Contrary to *R*, SPSS is not free. However, you can download and use SPSS for 14 days by visiting this link: <http://ibm.co/2brfyu1>.
+
+Hearne Software offers SPSS licenses that last 6, 12, or 24 months. This is specially helpful if you are taking an undergraduate or graduate course and needs access to SPSS for the time the course is being taught. Ensure to ask your instructor which package will be necessary, provided the requirements of the course. They offers *premium*, *standard*, and *base* license packages. Follow this link for more information: <http://bit.ly/2w5JcBs>.
+
+# Data sets
+
+The data sets for this book are stored in Dropbox[^references-5]. If necessary, I will direct you to Dropbox to download data sets when covering the topics for this book.
+
+[^references-5]: <https://www.dropbox.com/sh/2l93xe5gsd9ekf2/AAAuVP2nkmK2DaJYGNJ0Q5Nca?dl=0>
+
+# Problems to be Solved
+
+## Repeated-Measures ANOVA
+
+### Problem 1
+
+### Problem 2
+
+### Problem 3
+
+### Problem 4
+
+### Problem 5

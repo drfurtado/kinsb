@@ -1,0 +1,116 @@
+# Symbols and Equations {#symbols-equations}
+
+## Symbols
+
+Below are some of the symbols I will use throughout this book to refer to various statistical terms.
+
++-----------+-------------------------------+---------------------------+
+| Symbol    | Meaning                       | Reference to a value in a |
++:==========+:==============================+:==========================+
+| n         | Sample size                   | Sample                    |
++-----------+-------------------------------+---------------------------+
+| $\bar{x}$ | Sample mean                   | Sample                    |
++-----------+-------------------------------+---------------------------+
+| $\mu$     | Population mean               | Population                |
++-----------+-------------------------------+---------------------------+
+| s         | Sample standard deviation     | Sample                    |
++-----------+-------------------------------+---------------------------+
+| $\sigma$  | Population standard deviation | Population                |
++-----------+-------------------------------+---------------------------+
+| *r*       | Pearson correlation           | Sample                    |
++-----------+-------------------------------+---------------------------+
+| $\rho$    | Pearson correlation           | Population                |
++-----------+-------------------------------+---------------------------+
+| x, z      | Observed data value           | Population                |
++-----------+-------------------------------+---------------------------+
+
+## Equations
+
+Although, in general, you will not be required to perform calculations by hand while following the tutorials found in this book, it is worth getting familiar with some key equations[^ch-fundamentals-1].
+
+I will list them below.
+
+[^ch-fundamentals-1]: Adapted from Stoettner (2017) (<http://bit.ly/2PVJKRu>)
+
+Example... see Equation \@ref(eq:sem).
+
+**Standard error of the mean (SEM)**
+
+\begin{equation}
+\sigma_{\bar{x}}=\frac{\sigma}{\sqrt{n}}
+(#eq:sem)
+\end{equation}
+
+where:
+
+-   $\sigma_{\bar{x}}$ refers standard deviation of the sample means indicated by $\bar{x}$.
+-   $n$ refers to the sample size.
+-   $\sigma$ refers to the population standard deviation.
+
+------------------------------------------------------------------------
+
+**Z-test (**$\sigma$ is Known)
+
+A test used to compare a sample mean with a population value when the standard deviation of the population ($\sigma$) is known and the sample size (n) is larger than 30.
+
+\\begin{equation} \\label{standard normal value} (\\\#eq:z-test-one) z = \\frac{\\bar{x}-\\mu}{\\frac{\\sigma}{\\sqrt{n}}} \\end{equation}
+
+where:
+
+-   $\bar{x}$ refers to the sample mean.
+-   $\mu$ refers to the population mean.
+-   $\sigma$ refers to the population standard deviation.
+-   $n$ refers to the sample size.
+
+------------------------------------------------------------------------
+
+**One-Sample t-test (**$\sigma$ is Unknown)
+
+\begin{equation}
+\label{testing a mean sigma unknown}(\\\#eq:t-test-one) t = 
+\frac{\bar{x}-\mu}{\frac{s}{\sqrt{n}}}
+\end{equation}
+
+with $n-1$ degrees of freedom where:
+
+- $\bar{x}$ is the sample mean.
+- $\mu$ is the hypothesized population mean.
+- $s$ is the sample standard deviation.
+- $n$ is the number of observations in the sample.
+
+------------------------------------------------------------------------
+
+**Standard Deviation of Differences** - Two-Sample Test
+
+\begin{equation}
+s_{d} = \sqrt{\frac{\sum(d - \bar{d})^2}{n - 1}}
+\end{equation}
+
+where:
+
+- $\bar{d}$ is the mean of the difference between the paired or related observations.
+- $s_{d}$ is the standard deviation of the differences between the paired or related observations.
+- $n$ is the number of paired observations.
+
+------------------------------------------------------------------------
+
+**Coefficient of Variation**
+
+\begin{equation}
+\text{CV} = \\frac{s}{\\bar{x}}(100)
+  (\#eq:binom)
+\end{equation}
+
+Note: multiplying by 100 converts the decimal to a percent
+
+where:
+
+- $s$ is the sample standard deviation.
+- $\bar{x}$ is the sample mean.
+
+
+## Example
+\begin{equation}
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+  (\#eq:binom)
+\end{equation} 
